@@ -22,13 +22,9 @@ public class PlayerController : MonoBehaviour
         horizInp = Input.GetAxis("Horizontal");
         fwdInp = Input.GetAxis("Vertical");
 
-        if (horizInp != 0.0f)
+        if (horizInp != 0.0f || fwdInp != 0.0f)
         {
-            rigidBody.AddForce(horizInp * transform.right * playerSpeed);
-        }
-        if (fwdInp != 0.0f)
-        {
-            rigidBody.AddForce(fwdInp * transform.forward * playerSpeed);
+            transform.position += (fwdInp * transform.forward  + transform.right * horizInp).normalized * playerSpeed * Time.deltaTime;
         }
 
         /*if (Input.GetButtonDown("Jump"))
