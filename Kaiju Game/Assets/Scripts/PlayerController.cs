@@ -34,13 +34,15 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Interact"))
         {
-            Debug.Log("interact");
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit interactHit;
-            if(Physics.Raycast(ray, out interactHit, 3))
+            if(Physics.Raycast(ray, out interactHit, 100))
             {
-                Debug.Log(interactHit);
-                Destroy(interactHit.transform.gameObject);
+                Terminal termScript = interactHit.transform.GetComponent<Terminal>();
+                if (termScript != null)
+                {
+                    termScript.Activate();
+                }
             }
         }
     }
