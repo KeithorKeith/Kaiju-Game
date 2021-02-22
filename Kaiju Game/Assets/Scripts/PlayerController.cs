@@ -36,12 +36,12 @@ public class PlayerController : MonoBehaviour
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit interactHit;
-            if(Physics.Raycast(ray, out interactHit, 100))
+            if(Physics.Raycast(ray, out interactHit, 5))
             {
                 Terminal termScript = interactHit.transform.GetComponent<Terminal>();
                 if (termScript != null)
                 {
-                    termScript.Activate();
+                    termScript.Activate(gameObject);
                 }
             }
         }
