@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private float horizInp, fwdInp;
 
     private Camera cam;
+    public static readonly float INTERACTDISTANCE = 3.0f;
 
     void Start()
     {
@@ -36,7 +37,7 @@ public class PlayerController : MonoBehaviour
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit interactHit;
-            if(Physics.Raycast(ray, out interactHit, 5))
+            if(Physics.Raycast(ray, out interactHit, INTERACTDISTANCE))
             {
                 Terminal termScript = interactHit.transform.GetComponent<Terminal>();
                 if (termScript != null)

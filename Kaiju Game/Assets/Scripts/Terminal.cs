@@ -12,17 +12,21 @@ public class Terminal : MonoBehaviour
         if(player != null)
         {
             // If the player walks away remove the UI
-            if(Vector3.Distance(transform.position, player.transform.position) > 5.0f)
+            if(Vector3.Distance(transform.position, player.transform.position) > PlayerController.INTERACTDISTANCE)
             {
                 attachedUI.SetActive(false);
                 player = null;
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
             }
         }
     }
     public void Activate(GameObject player)
     {
-        Debug.Log("Activated!");
+        // Activate this terminal's UI and enable the cursor
         attachedUI.SetActive(true);
         this.player = player;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 }
