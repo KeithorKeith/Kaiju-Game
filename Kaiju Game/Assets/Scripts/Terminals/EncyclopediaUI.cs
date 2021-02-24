@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class EncyclopediaUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    private List<Monster> monsterList;
+    
+    void Awake()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
