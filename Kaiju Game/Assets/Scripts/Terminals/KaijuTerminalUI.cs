@@ -9,6 +9,7 @@ public class KaijuTerminalUI : MonoBehaviour
     public GameObject kaijuList;
     public GameObject kaijuPrefab;
 
+    public List<Kaiju> KaijuMasterList;
 
     // Start is called before the first frame update
     void Start()

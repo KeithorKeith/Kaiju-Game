@@ -159,6 +159,56 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &138300202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 138300204}
+  - component: {fileID: 138300203}
+  m_Layer: 0
+  m_Name: Fumao/Wind
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &138300203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138300202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Fumao
+  description: Fumao has the power to summon enough wind to invert an umbrella just
+    by existing.
+  kaijuSprite: {fileID: 21300000, guid: b5a93e6be8877ac4a875074f360c107c, type: 3}
+  elementType: {fileID: 21300000, guid: b5a93e6be8877ac4a875074f360c107c, type: 3}
+  elementName: Wind
+  isUnlocked: 0
+--- !u!4 &138300204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138300202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &145140434
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,6 +740,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &417739664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 417739666}
+  - component: {fileID: 417739665}
+  m_Layer: 0
+  m_Name: Baltunn/Blizzard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &417739665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417739664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Baltunn
+  description: Hidden in a constant Blizzard this Kaiju can single-handedly reverse
+    global warming just by taking a bath in the Atlantic ocean.
+  kaijuSprite: {fileID: 21300000, guid: 53e6c3742914334469bcfd33afb68b4e, type: 3}
+  elementType: {fileID: 21300000, guid: 53e6c3742914334469bcfd33afb68b4e, type: 3}
+  elementName: Blizzard
+  isUnlocked: 0
+--- !u!4 &417739666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417739664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &452584814
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +972,56 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4751761273741844430, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
   m_PrefabInstance: {fileID: 4751761272564559700}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &613380562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 613380564}
+  - component: {fileID: 613380563}
+  m_Layer: 0
+  m_Name: Vulchera/Magma
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &613380563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613380562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Vulchera
+  description: A rocky abomination of a Kaiju, Vulchera looks as if it will erupt
+    another magma filled animal at any moment.
+  kaijuSprite: {fileID: 21300000, guid: b85b59f113c0eda46a7c3f51835c6055, type: 3}
+  elementType: {fileID: 21300000, guid: b85b59f113c0eda46a7c3f51835c6055, type: 3}
+  elementName: Magma
+  isUnlocked: 0
+--- !u!4 &613380564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613380562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &671311700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1431,58 @@ Transform:
   m_Father: {fileID: 1121104269}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1092984279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1092984281}
+  - component: {fileID: 1092984280}
+  m_Layer: 0
+  m_Name: Kaitic/Electric
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1092984280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092984279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Kaitic
+  description: An ancient civilization was said to have advanced thousands of years
+    in just a short time because of the electricity generated by this bug. This eventually
+    led to their undoing as Kaitic eventually moved on, leaving them with powerless
+    devices and a new sense of boredom.
+  kaijuSprite: {fileID: 21300000, guid: b234fb092f1a15942b7f3d6df66ab9d7, type: 3}
+  elementType: {fileID: 21300000, guid: b234fb092f1a15942b7f3d6df66ab9d7, type: 3}
+  elementName: Electric
+  isUnlocked: 0
+--- !u!4 &1092984281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092984279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1121104268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,6 +1770,56 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5923772080285159654, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
   m_PrefabInstance: {fileID: 1261140913}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1384575509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1384575511}
+  - component: {fileID: 1384575510}
+  m_Layer: 0
+  m_Name: Metsius/Stone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1384575510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384575509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Metsius
+  description: A walking landscape, Metsius has his own ecosystem and a very forward
+    thinking community living on his back.
+  kaijuSprite: {fileID: 21300000, guid: f44d45e9b6d93b548890fc8264749fcc, type: 3}
+  elementType: {fileID: 21300000, guid: f44d45e9b6d93b548890fc8264749fcc, type: 3}
+  elementName: Stone
+  isUnlocked: 0
+--- !u!4 &1384575511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384575509}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1415564900 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4751761273307586864, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
@@ -1790,6 +2042,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498821580}
   m_CullTransparentMesh: 1
+--- !u!1 &1540079000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1540079002}
+  - component: {fileID: 1540079001}
+  m_Layer: 0
+  m_Name: Fenranis/Thunder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1540079001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540079000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Fenranis
+  description: The heavier the thunder sounds the more likely Fenranis is flying
+    above the clouds roaring at absolutely nothing, like an annoying fox in your
+    garden. What exactly is he screaming for?!
+  kaijuSprite: {fileID: 21300000, guid: 82c4b54445be4c6449a59b7d475d23b7, type: 3}
+  elementType: {fileID: 21300000, guid: 82c4b54445be4c6449a59b7d475d23b7, type: 3}
+  elementName: Thunder
+  isUnlocked: 0
+--- !u!4 &1540079002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540079000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1541830890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1916,6 +2219,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541830890}
   m_CullTransparentMesh: 1
+--- !u!1 &1586724505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1586724507}
+  - component: {fileID: 1586724506}
+  m_Layer: 0
+  m_Name: Kappobu/Water
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1586724506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586724505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Kappobu
+  description: When first discovered Kappobu was thought of as the origin of all
+    life, that was until he one day decided to chase his own tail and cause a city
+    to crumble into dust.
+  kaijuSprite: {fileID: 21300000, guid: f5bccccc85dd7d04891734bd8d76b70e, type: 3}
+  elementType: {fileID: 21300000, guid: f5bccccc85dd7d04891734bd8d76b70e, type: 3}
+  elementName: Water
+  isUnlocked: 0
+--- !u!4 &1586724507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586724505}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1775647684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1775647686}
+  - component: {fileID: 1775647685}
+  m_Layer: 0
+  m_Name: Jomola/Ice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1775647685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775647684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Jamola
+  description: A giant ice creature who's breath can cause snowstorms. In many  cultures
+    Jomola is said to carry Santa Clause from house to house. This terrified children
+    so they changed it to a slay.
+  kaijuSprite: {fileID: 21300000, guid: 5323ae666847d4b4b9c419e5ebb06d1d, type: 3}
+  elementType: {fileID: 21300000, guid: 5323ae666847d4b4b9c419e5ebb06d1d, type: 3}
+  elementName: Ice
+  isUnlocked: 0
+--- !u!4 &1775647686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775647684}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1888086024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,6 +2400,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888086024}
   m_CullTransparentMesh: 1
+--- !u!1 &1906772535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906772536}
+  - component: {fileID: 1906772537}
+  m_Layer: 0
+  m_Name: Zomodire/Fire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1906772536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906772535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1906772537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906772535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Zomdire
+  description: With magma coursing through this mountain of a lion this Kaiju can
+    produce enough fire to pop every corn in existence.
+  kaijuSprite: {fileID: 21300000, guid: 1be74ad3fddeff749b6957672849b9ac, type: 3}
+  elementType: {fileID: 21300000, guid: 1be74ad3fddeff749b6957672849b9ac, type: 3}
+  elementName: Fire
+  isUnlocked: 0
 --- !u!1 &1927603811
 GameObject:
   m_ObjectHideFlags: 0
