@@ -313,6 +313,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5869581653904964932, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
   m_PrefabInstance: {fileID: 5869581654007407590}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &241524388 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5049005531813931019, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+  m_PrefabInstance: {fileID: 5869581654007407590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241524385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a7d6b4f3035cc4ea5932b91bb3c3e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &250934718
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,7 +890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88898c0dbe52eb84a914d3770517a131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 2.5
+  playerSpeed: 3.5
 --- !u!54 &778711206
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -987,24 +998,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847818234}
   m_CullTransparentMesh: 1
---- !u!1 &885874431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5869581653274246425, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-  m_PrefabInstance: {fileID: 5869581654007407590}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &885874432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 885874431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d59909d0668e2064f807825c931c9825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dangerOverlay: {fileID: 2056369930}
 --- !u!1 &1010679994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,6 +1235,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0.60810804
       objectReference: {fileID: 0}
+    - target: {fileID: 5923772080285159648, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: mapTerminalUI
+      value: 
+      objectReference: {fileID: 241524388}
     - target: {fileID: 5923772080285159654, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1802,11 +1799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea2ed0c37e200734fa34f1bbd5be3375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2056369930 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5869581651970053356, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-  m_PrefabInstance: {fileID: 5869581654007407590}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4751761272564559700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2019,33 +2011,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 452584818}
     m_Modifications:
-    - target: {fileID: 2392661139733037655, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-      propertyPath: m_Text
+    - target: {fileID: 885874436, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: cityName
+      value: City 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047371256, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: cityName
+      value: City 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798575550, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: cityName
       value: City 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4778984531548594576, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -45.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049005531813931019, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-      propertyPath: defenseCities.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049005531813931019, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-      propertyPath: defenseCities.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049005531813931019, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-      propertyPath: defenseCities.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049005531813931019, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-      propertyPath: defenseCities.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5283876961637476004, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 124.4
       objectReference: {fileID: 0}
     - target: {fileID: 5869581653904964932, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
       propertyPath: m_Pivot.x
@@ -2137,11 +2113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5869581653904964935, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5974786105300557529, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-      propertyPath: m_Text
-      value: City 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
