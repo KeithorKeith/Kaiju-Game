@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class MapTerminalUI : MonoBehaviour
 {
+
+    public City[] defenseCities;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        defenseCities[0].ToggleOverlay(true);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
