@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 542319997741185775}
   - component: {fileID: 542319997741185761}
   m_Layer: 5
-  m_Name: Message 1
+  m_Name: Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 60}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &542319997741185761
 CanvasRenderer:
@@ -81,7 +81,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -40, y: -10}
+  m_SizeDelta: {x: -40, y: -6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1659658482507260657
 CanvasRenderer:
@@ -124,7 +124,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your egg hatched
+  m_Text: 'Error: message missing'
 --- !u!1 &6969344008332681093
 GameObject:
   m_ObjectHideFlags: 0
