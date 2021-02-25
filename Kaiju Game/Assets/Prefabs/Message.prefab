@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 542319997741185775}
   - component: {fileID: 542319997741185761}
   m_Layer: 5
-  m_Name: Message 1
+  m_Name: Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your egg hatched
+  m_Text: 'Error: message missing'
 --- !u!1 &6969344008332681093
 GameObject:
   m_ObjectHideFlags: 0
