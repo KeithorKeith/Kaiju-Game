@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class KaijuTerminalUI : MonoBehaviour
 {
+
+
+    public GameObject kaijuList;
+    public GameObject kaijuPrefab;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        AddMessage();
+        AddMessage();
+        AddMessage();
     }
 
     // Update is called once per frame
@@ -15,4 +23,10 @@ public class KaijuTerminalUI : MonoBehaviour
     {
         
     }
+
+    void AddMessage()
+    {
+        GameObject newMessage = Instantiate(kaijuPrefab, kaijuList.transform);
+    }
+
 }
