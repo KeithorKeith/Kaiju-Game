@@ -1223,18 +1223,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 452584818}
     m_Modifications:
-    - target: {fileID: 738632703, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 738632703, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 738632703, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.60810804
-      objectReference: {fileID: 0}
     - target: {fileID: 5923772080285159648, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: mapTerminalUI
       value: 
@@ -1326,10 +1314,6 @@ PrefabInstance:
     - target: {fileID: 5923772080285159655, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: m_Name
       value: Main UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 5923772080285159655, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
@@ -2011,17 +1995,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 452584818}
     m_Modifications:
-    - target: {fileID: 885874436, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-      propertyPath: cityName
-      value: City 1
+    - target: {fileID: 2017339144, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38020647
       objectReference: {fileID: 0}
-    - target: {fileID: 1047371256, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-      propertyPath: cityName
-      value: City 3
+    - target: {fileID: 2017339144, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.70670307
       objectReference: {fileID: 0}
-    - target: {fileID: 1798575550, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-      propertyPath: cityName
-      value: City 2
+    - target: {fileID: 2017339144, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838264079935527350, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636693379206843537, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636693379206843537, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869581653274246373, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5869581653904964932, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
       propertyPath: m_Pivot.x
@@ -2111,9 +2111,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map UI
       objectReference: {fileID: 0}
-    - target: {fileID: 5869581653904964935, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 6402468087368109656, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402468087368109656, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402468087368109656, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402468087368109656, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402468087368109656, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402468087368109656, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887921276885429113, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887921276885429113, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}

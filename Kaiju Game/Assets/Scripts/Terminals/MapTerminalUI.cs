@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MapTerminalUI : MonoBehaviour
 {
 
     public City[] defenseCities;
+    public GameObject battleScreen, kaijuSelectScreen;
+
+    public Image kaijuSprite, alienSprite;
+    private int highlightedCity;
 
     public List<string> CheckStatus()
     {
@@ -53,5 +58,28 @@ public class MapTerminalUI : MonoBehaviour
         }
     }
 
+    public void OpenBattle(int cityIndex)
+    {
+        battleScreen.SetActive(true);
+        highlightedCity = cityIndex;
+    }
+
+    public void OpenKaijuSelect()
+    {
+        kaijuSelectScreen.SetActive(true);
+    }
+
+    public void ChooseKaiju()
+    {
+        kaijuSelectScreen.SetActive(false);
+        kaijuSprite.sprite = null;
+        defenseCities[highlightedCity].defenseKaiju = null;
+    }
+
+    public void LockInBattle()
+    {
+        battleScreen.SetActive(false);
+        highlightedCity = -1;
+    }
 
 }
