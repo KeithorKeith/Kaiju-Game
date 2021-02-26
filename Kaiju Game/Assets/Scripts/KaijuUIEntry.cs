@@ -7,23 +7,16 @@ public class KaijuUIEntry : MonoBehaviour
 
     public KaijuTerminalUI terminalUI;
     public Kaiju kaiju;
-   
+    public GameObject hiddenBox;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void KaijuButtonClick()
     {
-        terminalUI.descriptionText.text = kaiju.description;
-        terminalUI.titleText.text = kaiju.name;
+        if (kaiju.isUnlocked)
+        {
+            terminalUI.descriptionText.text = kaiju.description;
+            terminalUI.titleText.text = kaiju.name;
+        }
+
     }
 }

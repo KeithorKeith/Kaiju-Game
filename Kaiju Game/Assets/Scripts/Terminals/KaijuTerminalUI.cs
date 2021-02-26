@@ -40,6 +40,10 @@ public class KaijuTerminalUI : MonoBehaviour
         KaijuUIEntry UIEntry = newKaiju.GetComponent<KaijuUIEntry>();
         UIEntry.terminalUI = this;
         UIEntry.kaiju = kaiju;
+        if (kaiju.isUnlocked)
+        {
+            UIEntry.hiddenBox.SetActive(false);
+        }
     }
 
 }

@@ -226,6 +226,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   terminalUI: {fileID: 0}
+  kaiju: {fileID: 0}
+  hiddenBox: {fileID: 5237329468717474170}
 --- !u!1 &5237329468717474170
 GameObject:
   m_ObjectHideFlags: 0
