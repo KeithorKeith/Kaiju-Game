@@ -21,6 +21,9 @@ public class BasicUI : MonoBehaviour
 
     public void CloseHelp()
     {
-        helpBox.SetActive(false);
+        if(helpBox != null)
+        {
+            helpBox.SetActive(false);
+        }
     }
 }
