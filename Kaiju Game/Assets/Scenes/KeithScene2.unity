@@ -123,92 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &107766560
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 107766561}
-  m_Layer: 5
-  m_Name: Sliding Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &107766561
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107766560}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 567056365}
-  m_Father: {fileID: 1541830891}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: -20}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &138300202
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 138300204}
-  - component: {fileID: 138300203}
-  m_Layer: 0
-  m_Name: Fumao/Wind
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &138300203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138300202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Fumao
-  description: Fumao has the power to summon enough wind to invert an umbrella just
-    by existing.
-  kaijuSprite: {fileID: 21300000, guid: b5a93e6be8877ac4a875074f360c107c, type: 3}
-  elementType: {fileID: 21300000, guid: b5a93e6be8877ac4a875074f360c107c, type: 3}
-  elementName: Wind
-  isUnlocked: 0
---- !u!4 &138300204
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138300202}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &159302839 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5923772080285159655, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
@@ -545,7 +459,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351533054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -3.46}
+  m_LocalPosition: {x: 0, y: 1, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 778711204}
@@ -701,56 +615,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &417739664
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 417739666}
-  - component: {fileID: 417739665}
-  m_Layer: 0
-  m_Name: Baltunn/Blizzard
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &417739665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 417739664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Baltunn
-  description: Hidden in a constant Blizzard this Kaiju can single-handedly reverse
-    global warming just by taking a bath in the Atlantic ocean.
-  kaijuSprite: {fileID: 21300000, guid: 53e6c3742914334469bcfd33afb68b4e, type: 3}
-  elementType: {fileID: 21300000, guid: 53e6c3742914334469bcfd33afb68b4e, type: 3}
-  elementName: Blizzard
-  isUnlocked: 0
---- !u!4 &417739666
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 417739664}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &452584814
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,136 +717,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &567056364
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 567056365}
-  - component: {fileID: 567056367}
-  - component: {fileID: 567056366}
-  m_Layer: 5
-  m_Name: Handle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &567056365
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567056364}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 107766561}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &567056366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567056364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &567056367
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567056364}
-  m_CullTransparentMesh: 1
---- !u!1 &592031051 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4751761273741844430, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-  m_PrefabInstance: {fileID: 4751761272564559700}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &613380562
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 613380564}
-  - component: {fileID: 613380563}
-  m_Layer: 0
-  m_Name: Vulchera/Magma
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &613380563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613380562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Vulchera
-  description: A rocky abomination of a Kaiju, Vulchera looks as if it will erupt
-    another magma filled animal at any moment.
-  kaijuSprite: {fileID: 21300000, guid: b85b59f113c0eda46a7c3f51835c6055, type: 3}
-  elementType: {fileID: 21300000, guid: b85b59f113c0eda46a7c3f51835c6055, type: 3}
-  elementName: Magma
-  isUnlocked: 0
---- !u!4 &613380564
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613380562}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &641503526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1247,7 +981,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778711200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.05, z: 0}
+  m_LocalPosition: {x: 0, y: 1.315, z: -2.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 351533057}
@@ -1374,11 +1108,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847818234}
   m_CullTransparentMesh: 1
---- !u!224 &878581822 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4751761272635782758, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-  m_PrefabInstance: {fileID: 4751761272564559700}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1010679994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,58 +1292,6 @@ Transform:
   m_Father: {fileID: 1121104269}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1092984279
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1092984281}
-  - component: {fileID: 1092984280}
-  m_Layer: 0
-  m_Name: Kaitic/Electric
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1092984280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1092984279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Kaitic
-  description: An ancient civilization was said to have advanced thousands of years
-    in just a short time because of the electricity generated by this bug. This eventually
-    led to their undoing as Kaitic eventually moved on, leaving them with powerless
-    devices and a new sense of boredom.
-  kaijuSprite: {fileID: 21300000, guid: b234fb092f1a15942b7f3d6df66ab9d7, type: 3}
-  elementType: {fileID: 21300000, guid: b234fb092f1a15942b7f3d6df66ab9d7, type: 3}
-  elementName: Electric
-  isUnlocked: 0
---- !u!4 &1092984281
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1092984279}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1121104268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,15 +1333,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 738632703, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 738632703, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 738632703, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.6081081
       objectReference: {fileID: 0}
     - target: {fileID: 1525067965, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1854,6 +1531,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main UI
       objectReference: {fileID: 0}
+    - target: {fileID: 5923772080285159655, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5923772081084054682, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1893,6 +1574,10 @@ PrefabInstance:
     - target: {fileID: 6278071130214853289, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7519519696949507827, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -29.920044
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
@@ -1901,56 +1586,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5923772080285159654, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
   m_PrefabInstance: {fileID: 1261140913}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1384575509
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1384575511}
-  - component: {fileID: 1384575510}
-  m_Layer: 0
-  m_Name: Metsius/Stone
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1384575510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384575509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Metsius
-  description: A walking landscape, Metsius has his own ecosystem and a very forward
-    thinking community living on his back.
-  kaijuSprite: {fileID: 21300000, guid: f44d45e9b6d93b548890fc8264749fcc, type: 3}
-  elementType: {fileID: 21300000, guid: f44d45e9b6d93b548890fc8264749fcc, type: 3}
-  elementName: Stone
-  isUnlocked: 0
---- !u!4 &1384575511
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384575509}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1415564900 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4751761273307586864, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
@@ -2173,285 +1808,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498821580}
   m_CullTransparentMesh: 1
---- !u!1 &1540079000
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1540079002}
-  - component: {fileID: 1540079001}
-  m_Layer: 0
-  m_Name: Fenranis/Thunder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1540079001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540079000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Fenranis
-  description: The heavier the thunder sounds the more likely Fenranis is flying
-    above the clouds roaring at absolutely nothing, like an annoying fox in your
-    garden. What exactly is he screaming for?!
-  kaijuSprite: {fileID: 21300000, guid: 82c4b54445be4c6449a59b7d475d23b7, type: 3}
-  elementType: {fileID: 21300000, guid: 82c4b54445be4c6449a59b7d475d23b7, type: 3}
-  elementName: Thunder
-  isUnlocked: 0
---- !u!4 &1540079002
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540079000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1541830890
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1541830891}
-  - component: {fileID: 1541830894}
-  - component: {fileID: 1541830893}
-  - component: {fileID: 1541830892}
-  m_Layer: 5
-  m_Name: Scrollbar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1541830891
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541830890}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 107766561}
-  m_Father: {fileID: 878581822}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1541830892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541830890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 567056366}
-  m_HandleRect: {fileID: 567056365}
-  m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.39163393
-  m_NumberOfSteps: 0
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1541830893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541830890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1541830894
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541830890}
-  m_CullTransparentMesh: 1
---- !u!1 &1586724505
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1586724507}
-  - component: {fileID: 1586724506}
-  m_Layer: 0
-  m_Name: Kappobu/Water
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1586724506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586724505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Kappobu
-  description: When first discovered Kappobu was thought of as the origin of all
-    life, that was until he one day decided to chase his own tail and cause a city
-    to crumble into dust.
-  kaijuSprite: {fileID: 21300000, guid: f5bccccc85dd7d04891734bd8d76b70e, type: 3}
-  elementType: {fileID: 21300000, guid: f5bccccc85dd7d04891734bd8d76b70e, type: 3}
-  elementName: Water
-  isUnlocked: 0
---- !u!4 &1586724507
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586724505}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1775647684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1775647686}
-  - component: {fileID: 1775647685}
-  m_Layer: 0
-  m_Name: Jomola/Ice
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1775647685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1775647684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Jamola
-  description: A giant ice creature who's breath can cause snowstorms. In many  cultures
-    Jomola is said to carry Santa Clause from house to house. This terrified children
-    so they changed it to a slay.
-  kaijuSprite: {fileID: 21300000, guid: 5323ae666847d4b4b9c419e5ebb06d1d, type: 3}
-  elementType: {fileID: 21300000, guid: 5323ae666847d4b4b9c419e5ebb06d1d, type: 3}
-  elementName: Ice
-  isUnlocked: 0
---- !u!4 &1775647686
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1775647684}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1888086024
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,56 +1887,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888086024}
   m_CullTransparentMesh: 1
---- !u!1 &1906772535
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1906772536}
-  - component: {fileID: 1906772537}
-  m_Layer: 0
-  m_Name: Zomodire/Fire
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1906772536
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1906772535}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 656.5677, y: 376.26297, z: -338.01797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1906772537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1906772535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae2e7d9da657627469c91da6123379cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Zomdire
-  description: With magma coursing through this mountain of a lion this Kaiju can
-    produce enough fire to pop every corn in existence.
-  kaijuSprite: {fileID: 21300000, guid: 1be74ad3fddeff749b6957672849b9ac, type: 3}
-  elementType: {fileID: 21300000, guid: 1be74ad3fddeff749b6957672849b9ac, type: 3}
-  elementName: Fire
-  isUnlocked: 0
 --- !u!1 &1927603811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,6 +1938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea2ed0c37e200734fa34f1bbd5be3375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  helpBox: {fileID: 0}
 --- !u!1001 &2008869256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2696,101 +2003,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 452584818}
     m_Modifications:
-    - target: {fileID: 314276500, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
+    - target: {fileID: 567056365, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 567056365, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 314276500, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
+    - target: {fileID: 567056365, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 314276500, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 314276500, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 385618960, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 385618960, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 385618960, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 385618960, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1940734544, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1940734544, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1940734544, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1940734544, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761272635782758, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 493.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761272635782758, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -32.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761272635782758, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 316.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761272635782758, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -16.150024
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761272635782759, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_Horizontal
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761272635782759, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_VerticalScrollbar
-      value: 
-      objectReference: {fileID: 1541830892}
-    - target: {fileID: 4751761273169749427, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761273169749427, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761273169749427, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761273169749427, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4751761273307586864, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
       propertyPath: m_Name
       value: Kaiju UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761273307586864, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4751761273307586865, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
       propertyPath: m_Pivot.x
@@ -2874,46 +2101,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4751761273307586865, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761273307586867, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: kaijuList
-      value: 
-      objectReference: {fileID: 592031051}
-    - target: {fileID: 4751761273307586867, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: kaijuPrefab
-      value: 
-      objectReference: {fileID: 4003576215029091265, guid: d40b266d760a8414c9d700a5705d3299, type: 3}
-    - target: {fileID: 4751761274118019501, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761274118019501, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761274118019501, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761274118019501, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761274130613071, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761274130613071, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761274130613071, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751761274130613071, guid: d416bac6702a3b545b66f9e8d7fff99b, type: 3}
-      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

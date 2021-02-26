@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KaijuTerminalUI : MonoBehaviour
 {
@@ -10,13 +11,19 @@ public class KaijuTerminalUI : MonoBehaviour
     public GameObject kaijuPrefab;
 
     public List<Kaiju> KaijuMasterList;
+    public Text descriptionText;
+    public Text titleText;
 
     // Start is called before the first frame update
     void Start()
     {
-        AddMessage();
-        AddMessage();
-        AddMessage();
+        foreach(Kaiju kaiju in KaijuMasterList)
+        {
+            AddKaijuToUI(kaiju);
+        }
+
+        descriptionText.text = KaijuMasterList[0].description;
+        titleText.text = KaijuMasterList[0].name;
     }
 
     // Update is called once per frame
@@ -25,9 +32,14 @@ public class KaijuTerminalUI : MonoBehaviour
         
     }
 
-    void AddMessage()
+    void AddKaijuToUI(Kaiju kaiju)
     {
-        GameObject newMessage = Instantiate(kaijuPrefab, kaijuList.transform);
+        GameObject newKaiju = Instantiate(kaijuPrefab, kaijuList.transform);
+        Image kaijuImage = newKaiju.GetComponent<Image>();
+        kaijuImage.sprite = kaiju.kaijuSprite;
+        KaijuUIEntry UIEntry = newKaiju.GetComponent<KaijuUIEntry>();
+        UIEntry.terminalUI = this;
+        UIEntry.kaiju = kaiju;
     }
 
 }
