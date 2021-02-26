@@ -5,6 +5,9 @@ using UnityEngine;
 public class EncyclopediaUI : MonoBehaviour
 {
 
+    public GameObject alienList;
+    public GameObject alienPrefab;
+
     private List<Monster> monsterList;
     
     void Awake()
@@ -16,4 +19,10 @@ public class EncyclopediaUI : MonoBehaviour
     {
         
     }
+
+    void AddMessage()
+    {
+        GameObject newMessage = Instantiate(alienPrefab, alienList.transform);
+    }
+
 }
