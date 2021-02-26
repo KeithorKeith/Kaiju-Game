@@ -23,4 +23,9 @@ public class HUD : MonoBehaviour
             }
         }
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

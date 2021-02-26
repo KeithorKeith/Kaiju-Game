@@ -4,10 +4,23 @@ using UnityEngine;
 
 public class BasicUI : MonoBehaviour
 {
+    public GameObject helpBox;
+
     public void Close()
     {
+        CloseHelp();
         gameObject.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void OpenHelp()
+    {
+        helpBox.SetActive(true);
+    }
+
+    public void CloseHelp()
+    {
+        helpBox.SetActive(false);
     }
 }
