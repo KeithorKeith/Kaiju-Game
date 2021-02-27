@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class KaijuTerminalUI : MonoBehaviour
 {
-
-
     public GameObject kaijuList, myKaijuList;
     public GameObject kaijuPrefab, myKaijuEntryPrefab;
 

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &194511620261570837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194511620261570839}
+  - component: {fileID: 194511620261570838}
+  m_Layer: 0
+  m_Name: Alien1_WToThunder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &194511620261570839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194511620261570837}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 792.82025, y: 456.58856, z: 62.807617}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &194511620261570838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194511620261570837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 121fa013588d9c644af19c78f5acd2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Specimen 9
+  hintBox1: The specimen reduced the Kaiju to ash in a mater of seconds. No valuable
+    data was received.
+  hintBox2: I do not know the link between inclement weather and these creatures
+    but they seem to develop an unnatural fear whenever the weather changes to anything
+    other than a clear sky.
+  hintBox3: 'The weather during the last battle was the most violent i have seen
+    it in a long time thunder and lightning seemed to tear the sky in half. It was
+    the only reason the Kaiju lasted more than an hour during the fight as it was
+    completely outclassed. '
+  alienSprite: {fileID: 0}
+  elementType: {fileID: 0}
+  elementName: Weak to thunder
+  isUnlocked1: 0
+  isUnlocked2: 0
+  isUnlocked3: 0
