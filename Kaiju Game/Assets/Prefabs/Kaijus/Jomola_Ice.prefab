@@ -51,3 +51,4 @@ MonoBehaviour:
   elementType: {fileID: 21300000, guid: 5323ae666847d4b4b9c419e5ebb06d1d, type: 3}
   elementName: Ice
   isUnlocked: 1
+  isDNA: 0

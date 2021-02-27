@@ -12,6 +12,7 @@ public class KaijuTerminalUI : MonoBehaviour
 
     public List<Kaiju> KaijuMasterList;
     public List<Kaiju> currentKaiju;
+    public List<Kaiju> dnaMasterList;
     public Text descriptionText;
     public Text titleText;
 
@@ -33,10 +34,7 @@ public class KaijuTerminalUI : MonoBehaviour
     {
         currentEggs = new List<Egg>();
         activeBreedingKaiju = new Kaiju[breedingKaijuButtons.Length];
-        foreach (Kaiju kaiju in KaijuMasterList)
-        {
-            AddKaijuToUI(kaiju);
-        }
+        RenderKaijuEncyclopedia();
 
         descriptionText.text = KaijuMasterList[0].description;
         titleText.text = KaijuMasterList[0].name;
@@ -48,6 +46,10 @@ public class KaijuTerminalUI : MonoBehaviour
         GameObject scndKaiju = Instantiate(KaijuMasterList[1].gameObject);
         Kaiju scndKaijuScript = scndKaiju.GetComponent<Kaiju>();
         currentKaiju.Add(scndKaijuScript);
+
+        GameObject firstDNA = Instantiate(dnaMasterList[0].gameObject);
+        Kaiju firstDNAScript = firstDNA.GetComponent<Kaiju>();
+        currentKaiju.Add(firstDNAScript);
 
         RenderMyKaijuUI();
     }
@@ -71,6 +73,18 @@ public class KaijuTerminalUI : MonoBehaviour
         return result;
     }
 
+
+    void RenderKaijuEncyclopedia()
+    {
+        foreach (Transform child in kaijuList.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+        foreach (Kaiju kaiju in KaijuMasterList)
+        {
+            AddKaijuToUI(kaiju);
+        }
+    } 
 
     void AddKaijuToUI(Kaiju kaiju)
     {
@@ -151,12 +165,12 @@ public class KaijuTerminalUI : MonoBehaviour
             breedingKaijuButtons[0].GetComponent<Image>().sprite = null;
             breedingKaijuButtons[1].GetComponent<Image>().sprite = null;
 
-            breedingResultText.text = "Invalid combination";
+            breedingResultText.text = "Invalid combination, kaiju have been returned to your party";
             RenderMyKaijuUI();
             return;
         }
 
-        breedingResultText.text = "New egg created!";
+        breedingResultText.text = "New egg created! ";
         currentEggs.Add(new Egg(2, newElement));
         activeBreedingKaiju[0] = null;
         activeBreedingKaiju[1] = null;
@@ -220,6 +234,8 @@ public class KaijuTerminalUI : MonoBehaviour
                 newKaijuIndex = i;
             }
         }
+        KaijuMasterList[newKaijuIndex].isUnlocked = true;
+        RenderKaijuEncyclopedia();
         GameObject newKaiju = Instantiate(KaijuMasterList[newKaijuIndex].gameObject);
         Kaiju newKaijuScript = newKaiju.GetComponent<Kaiju>();
         currentKaiju.Add(newKaijuScript);

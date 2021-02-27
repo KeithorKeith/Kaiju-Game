@@ -2563,8 +2563,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.1, z: 1}
-  m_Center: {x: 0, y: -1, z: 0}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: -0.51, z: 0}
 --- !u!4 &778711204
 Transform:
   m_ObjectHideFlags: 0
@@ -5504,6 +5504,8 @@ MonoBehaviour:
   - {fileID: 3871646515835084033, guid: 746f3dd51b8e712468c788bd2e7a501a, type: 3}
   - {fileID: 6743410271345315746, guid: 6c226f8722997794a9c7029ede254111, type: 3}
   currentKaiju: []
+  dnaMasterList:
+  - {fileID: 4149474624881796681, guid: 52d7d5c964d77df498312f1f6b9ea46a, type: 3}
   descriptionText: {fileID: 1326207998}
   titleText: {fileID: 841536148}
   breedKaijuEntryPrefab: {fileID: 1315789601897682038, guid: ce536e3985994d64da7a57c129fff1f9, type: 3}

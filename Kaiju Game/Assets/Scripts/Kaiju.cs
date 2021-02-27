@@ -15,6 +15,7 @@ public class Kaiju : MonoBehaviour
     public string elementName;
 
     public bool isUnlocked;
+    public bool isDNA;
 
     public Kaiju()
     {
