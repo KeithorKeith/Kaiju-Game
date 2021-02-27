@@ -14,6 +14,7 @@ public class MainTerminalUI : MonoBehaviour
 
     // References to other Scene objects
     public MapTerminalUI mapTerminalUI;
+    public KaijuTerminalUI kaijuTerminalUI;
 
     // Variables
     private int currentTurn = 1;
@@ -51,6 +52,12 @@ public class MainTerminalUI : MonoBehaviour
                 mapTerminalUI.AttackCities(2);
                 AddMessage("2 cities came under attack!");
                 break;
+        }
+
+        List<string> kaijuMessages = kaijuTerminalUI.AdvanceTurn();
+        foreach (string msg in kaijuMessages)
+        {
+            AddMessage(msg);
         }
     }
 

@@ -6,12 +6,16 @@ public class BasicUI : MonoBehaviour
 {
     public GameObject helpBox;
 
-    public void Close()
+    public void Close(bool keepCursor=true)
     {
         CloseHelp();
         gameObject.SetActive(false);
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        if (!keepCursor)
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
     }
 
     public void OpenHelp()
