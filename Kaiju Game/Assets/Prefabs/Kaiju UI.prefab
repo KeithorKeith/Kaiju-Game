@@ -741,14 +741,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4751761273307586865}
   - component: {fileID: 4751761273307586866}
-  - component: {fileID: 4751761273307586867}
   m_Layer: 5
   m_Name: Kaiju UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4751761273307586865
 RectTransform:
   m_ObjectHideFlags: 0
@@ -785,32 +784,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helpBox: {fileID: 0}
---- !u!114 &4751761273307586867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4751761273307586864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb0c491936feae743917400f33a48133, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kaijuList: {fileID: 4751761273741844430}
-  kaijuPrefab: {fileID: 4003576215029091265, guid: d40b266d760a8414c9d700a5705d3299, type: 3}
-  KaijuMasterList:
-  - {fileID: 7809719248986890539, guid: 81dfe19ebe6c3e04fa5439aa564e3ebb, type: 3}
-  - {fileID: 4181619789530428352, guid: 85a48a571992a2a4b97e05c6c4352444, type: 3}
-  - {fileID: 8021432205507426437, guid: 601d6db929a5a7b448d651fd89e0a9ce, type: 3}
-  - {fileID: 5936363057129050509, guid: aa896c35e9f5c1345b78c9b6a616b864, type: 3}
-  - {fileID: 1713981277752721563, guid: aa25527c79fe7cc46923b731ae746a98, type: 3}
-  - {fileID: 6067069069089253445, guid: 44a3299232f213143950682a2be59c9d, type: 3}
-  - {fileID: 1981001237055548978, guid: 43cda9e36fe428348ae57ecf7930eb68, type: 3}
-  - {fileID: 3871646515835084033, guid: 746f3dd51b8e712468c788bd2e7a501a, type: 3}
-  - {fileID: 6743410271345315746, guid: 6c226f8722997794a9c7029ede254111, type: 3}
-  descriptionText: {fileID: 4751761274202363660}
-  titleText: {fileID: 52785595}
 --- !u!1 &4751761273741844430
 GameObject:
   m_ObjectHideFlags: 0

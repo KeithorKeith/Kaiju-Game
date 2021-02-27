@@ -26,4 +26,10 @@ public class BasicUI : MonoBehaviour
             helpBox.SetActive(false);
         }
     }
+
+    public void OpenMenu(GameObject menuObject)
+    {
+        menuObject.SetActive(true);
+        gameObject.SetActive(false);
+    }
 }

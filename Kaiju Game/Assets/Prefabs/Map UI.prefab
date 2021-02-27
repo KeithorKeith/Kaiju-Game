@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9056604, g: 0.70670307, b: 0.38020647, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -302,7 +302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1566131343051371939
 RectTransform:
   m_ObjectHideFlags: 0
@@ -559,7 +559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6806123395568107593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -952,11 +952,11 @@ MonoBehaviour:
       - m_Target: {fileID: 5049005531813931019}
         m_TargetAssemblyTypeName: MapTerminalUI, Assembly-CSharp
         m_MethodName: OpenBattle
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2015,7 +2015,7 @@ MonoBehaviour:
       - m_Target: {fileID: 5049005531813931019}
         m_TargetAssemblyTypeName: MapTerminalUI, Assembly-CSharp
         m_MethodName: OpenBattle
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2054,7 +2054,7 @@ GameObject:
   - component: {fileID: 5869581653302058533}
   - component: {fileID: 5869581653302058532}
   m_Layer: 5
-  m_Name: HEY
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2253,7 +2253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5869581653904964932
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2291,6 +2291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea2ed0c37e200734fa34f1bbd5be3375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  helpBox: {fileID: 0}
 --- !u!114 &5049005531813931019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2309,8 +2310,8 @@ MonoBehaviour:
   - {fileID: 1047371256}
   battleScreen: {fileID: 807420473082507140}
   kaijuSelectScreen: {fileID: 1838264079935527350}
-  kaijuSprite: {fileID: 0}
-  alienSprite: {fileID: 0}
+  kaijuSprite: {fileID: 5767554794216006315}
+  alienSprite: {fileID: 1410222930011449430}
 --- !u!1 &6278811274346692445
 GameObject:
   m_ObjectHideFlags: 0
@@ -2642,10 +2643,10 @@ RectTransform:
   m_Father: {fileID: 5153930524276983245}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 100, y: -100}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2282905834202091507
 CanvasRenderer:
@@ -3330,11 +3331,11 @@ MonoBehaviour:
       - m_Target: {fileID: 5049005531813931019}
         m_TargetAssemblyTypeName: MapTerminalUI, Assembly-CSharp
         m_MethodName: OpenBattle
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
