@@ -51,8 +51,8 @@ MonoBehaviour:
     dark clouds.
   hintBox3: Rain started to pour down in the middle of the battle, this was the only
     time the specimen showed any form of pain as it screeched in agony at the raindrops.
-  alienSprite: {fileID: 0}
-  elementType: {fileID: 0}
+  alienSprite: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
+  elementType: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
   elementName: weak to water
   isUnlocked1: 0
   isUnlocked2: 0

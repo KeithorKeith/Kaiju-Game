@@ -49,8 +49,8 @@ MonoBehaviour:
     when our Kaiju stuck him with an exploding vehicle. '
   hintBox3: The more collateral damage and blazing building surround this creature
     the more weak it seems to get. It must not like hot environments!
-  alienSprite: {fileID: 0}
-  elementType: {fileID: 0}
+  alienSprite: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
+  elementType: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
   elementName: Weak to fire
   isUnlocked1: 0
   isUnlocked2: 0

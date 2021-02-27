@@ -49,8 +49,8 @@ MonoBehaviour:
     join it in a battle above the clouds.
   hintBox3: The speed of this creature was slowed to a halt in the snow at the mountains
     peak. The specimen then decided to run and wait to fight in the city below.
-  alienSprite: {fileID: 0}
-  elementType: {fileID: 0}
+  alienSprite: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
+  elementType: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
   elementName: Weak to ice
   isUnlocked1: 0
   isUnlocked2: 0

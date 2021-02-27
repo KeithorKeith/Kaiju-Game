@@ -52,8 +52,8 @@ MonoBehaviour:
     that night and nothing could be seen at the peak of the mountain. As soon as
     the specimen destroyed the Kaiju it made a hasty return to the base of the mountain
     and burrowed underground to sleep.
-  alienSprite: {fileID: 0}
-  elementType: {fileID: 0}
+  alienSprite: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
+  elementType: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
   elementName: Weak to blizzard
   isUnlocked1: 0
   isUnlocked2: 0

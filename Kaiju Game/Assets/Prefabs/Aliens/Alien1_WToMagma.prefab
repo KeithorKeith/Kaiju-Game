@@ -50,8 +50,8 @@ MonoBehaviour:
     out of it. The heat may have had something to do with it.
   hintBox3: A sink hole dragged the specimen and the Kaiju under ground, the falling
     debris seemed to give the Kaiju a momentary advantage.
-  alienSprite: {fileID: 0}
-  elementType: {fileID: 0}
+  alienSprite: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
+  elementType: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
   elementName: Weak to Magma
   isUnlocked1: 0
   isUnlocked2: 0

@@ -49,8 +49,8 @@ MonoBehaviour:
   hintBox2: Avoiding large metal pieces of the city, it prefers to use water to traverse.
   hintBox3: The battle that occurred near a power transformer was the only time we
     noticed this specimen wince in pain.
-  alienSprite: {fileID: 0}
-  elementType: {fileID: 0}
+  alienSprite: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
+  elementType: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
   elementName: Weak to electric
   isUnlocked1: 0
   isUnlocked2: 0
