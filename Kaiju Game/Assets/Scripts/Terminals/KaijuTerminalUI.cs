@@ -116,6 +116,7 @@ public class KaijuTerminalUI : MonoBehaviour
 
     public void SetKaijuForBreeding(int breedingPosition, int kaijuPosition)
     {
+        breedingResultText.text = "";
         breedKaijuSelect.SetActive(false);
         breedingKaijuButtons[breedingPosition].GetComponent<Image>().sprite = currentKaiju[kaijuPosition].kaijuSprite;
         activeBreedingKaiju[breedingPosition] = currentKaiju[kaijuPosition];
@@ -131,7 +132,32 @@ public class KaijuTerminalUI : MonoBehaviour
             return;
         }
 
-        currentEggs.Add(new Egg(2, "fire"));
+        string newElement = GetBredElement(activeBreedingKaiju[0], activeBreedingKaiju[1]);
+
+
+        if (newElement == "invalid")
+        {
+            if(activeBreedingKaiju[0] != null)
+            {
+                currentKaiju.Add(activeBreedingKaiju[0]);
+            }
+            if (activeBreedingKaiju[1] != null)
+            {
+                currentKaiju.Add(activeBreedingKaiju[1]);
+            }
+
+            activeBreedingKaiju[0] = null;
+            activeBreedingKaiju[1] = null;
+            breedingKaijuButtons[0].GetComponent<Image>().sprite = null;
+            breedingKaijuButtons[1].GetComponent<Image>().sprite = null;
+
+            breedingResultText.text = "Invalid combination";
+            RenderMyKaijuUI();
+            return;
+        }
+
+        breedingResultText.text = "New egg created!";
+        currentEggs.Add(new Egg(2, newElement));
         activeBreedingKaiju[0] = null;
         activeBreedingKaiju[1] = null;
         breedingKaijuButtons[0].GetComponent<Image>().sprite = null;
@@ -185,8 +211,16 @@ public class KaijuTerminalUI : MonoBehaviour
     {
         currentEggs.Remove(egg);
         RenderEggUI();
-        //TODO: Check which element should spawn
-        GameObject newKaiju = Instantiate(KaijuMasterList[2].gameObject);
+
+        int newKaijuIndex = 0;
+        for(int i=0; i < KaijuMasterList.Count; i++)
+        {
+            if(KaijuMasterList[i].elementName.ToLower() == egg.element)
+            {
+                newKaijuIndex = i;
+            }
+        }
+        GameObject newKaiju = Instantiate(KaijuMasterList[newKaijuIndex].gameObject);
         Kaiju newKaijuScript = newKaiju.GetComponent<Kaiju>();
         currentKaiju.Add(newKaijuScript);
         RenderMyKaijuUI();
@@ -194,6 +228,29 @@ public class KaijuTerminalUI : MonoBehaviour
         hatchPopup.SetActive(true);
         hatchImage.sprite = newKaijuScript.kaijuSprite;
 
+    }
+
+    private string GetBredElement(Kaiju first, Kaiju second)
+    {
+        string newElement = "invalid";
+        string firstElement = "none";
+        string secondElement = "none";
+        if(first != null) { firstElement = first.elementName.ToLower(); }
+        if (second != null) { secondElement = second.elementName.ToLower(); }
+
+        if ((firstElement == "fire" && secondElement == "none") || (secondElement == "fire" && firstElement == "none"))
+        {
+            newElement = "fire";
+        }
+        else if ((firstElement == "ice" && secondElement == "none") || (secondElement == "ice" && firstElement == "none"))
+        {
+            newElement = "ice";
+        }
+        else if ((firstElement == "ice" && secondElement == "fire") || (secondElement == "ice" && firstElement == "fire"))
+        {
+            newElement = "water";
+        }
+        return newElement;
     }
 
 }
