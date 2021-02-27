@@ -42,6 +42,10 @@ public class EncyclopediaUI : MonoBehaviour
         AlienUIEntry UIEntry = newAlien.GetComponent<AlienUIEntry>();
         UIEntry.terminalUI = this;
         UIEntry.alien = alien;
+        if (alien.isUnlocked1)
+        {
+            UIEntry.hiddenBox.SetActive(false);
+        }
     }
 
 }

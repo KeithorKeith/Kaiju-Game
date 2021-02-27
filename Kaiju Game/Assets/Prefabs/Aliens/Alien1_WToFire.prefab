@@ -52,6 +52,6 @@ MonoBehaviour:
   alienSprite: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
   elementType: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
   elementName: Weak to fire
-  isUnlocked1: 0
+  isUnlocked1: 1
   isUnlocked2: 0
   isUnlocked3: 0
