@@ -13,7 +13,7 @@ public class City : MonoBehaviour
     private int attackCountdown;
 
     public Kaiju defenseKaiju;
-
+    public Alien attackingAlien;
 
     public void ToggleUnderAttack(bool newStatus, int countdown=0)
     {

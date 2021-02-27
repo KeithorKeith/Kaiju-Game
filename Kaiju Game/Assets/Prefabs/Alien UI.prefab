@@ -70,8 +70,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.7781, y: -397}
-  m_SizeDelta: {x: 1112.1146, y: 388.9317}
+  m_AnchoredPosition: {x: -3.7818, y: -304.291}
+  m_SizeDelta: {x: 1112.1, y: 203.513}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3370139689386515425
 CanvasRenderer:
@@ -103,24 +103,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3fd5fbd04c003704791630832521e013, type: 3}
-    m_FontSize: 300
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 300
+    m_MaxSize: 90
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'sfdgsfdgsfdgsdfgsdfgsdfgsdfgsfdgsdfgsdfgsfgsdfgd.
-
-    sasdfadsfadsfasdfasdfasdfadsvcsafdbsfgbsdfgb.
-
-    fgbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbs.sd
-
-    bsdfbsdfbsdfbsdfbsdfbfbafvbajdfhlkajdsbvlkajsdblfkablfdskjvb.'
+  m_Text: 
 --- !u!1 &3370139689394710244
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,13 +268,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'sfdgsfdgsfdgsdfgsdfgsdfgsdfgsfdgsdfgsdfgsfgsdfgd.
-
-    sasdfadsfadsfasdfasdfasdfadsvcsafdbsfgbsdfgb.
-
-    fgbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbs.sd
-
-    bsdfbsdfbsdfbsdfbsdfbfbafvbajdfhlkajdsbvlkajsdblfkablfdskjvb.'
+  m_Text: 
 --- !u!1 &3370139689904721139
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,8 +301,8 @@ RectTransform:
   m_Father: {fileID: 3370139689357391934}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.73582673}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -516,8 +504,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.7781, y: -179}
-  m_SizeDelta: {x: 1112.1146, y: 388.9317}
+  m_AnchoredPosition: {x: -3.7818, y: -87.484}
+  m_SizeDelta: {x: 1112.1, y: 205.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3370139691024793471
 CanvasRenderer:
@@ -549,24 +537,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3fd5fbd04c003704791630832521e013, type: 3}
-    m_FontSize: 300
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 300
+    m_MaxSize: 90
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'sfdgsfdgsfdgsdfgsdfgsdfgsdfgsfdgsdfgsdfgsfgsdfgd.
-
-    sasdfadsfadsfasdfasdfasdfadsvcsafdbsfgbsdfgb.
-
-    fgbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbs.sd
-
-    bsdfbsdfbsdfbsdfbsdfbfbafvbajdfhlkajdsbvlkajsdblfkablfdskjvb.'
+  m_Text: 
 --- !u!1 &8013172034562996564
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,7 +673,7 @@ MonoBehaviour:
       - m_Target: {fileID: 8013172035919231533}
         m_TargetAssemblyTypeName: BasicUI, Assembly-CSharp
         m_MethodName: Close
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -980,7 +962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8013172035919231534
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1030,12 +1012,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alienList: {fileID: 8013172035820504273}
-  alienPrefab: {fileID: 4003576215029091265, guid: d40b266d760a8414c9d700a5705d3299, type: 3}
+  alienPrefab: {fileID: 6548471777560049443, guid: 3b166a04f8bbd4c4fadb65d13907011e, type: 3}
   titleText: {fileID: 3370139689412373156}
   hintBox1: {fileID: 8013172036164766739}
   hintBox2: {fileID: 3370139691024793470}
   hintBox3: {fileID: 3370139689386515424}
-  alienMasterList: []
+  alienMasterList:
+  - {fileID: 1607056561785816261, guid: b1a2cf410ccd1ee4281762c20721d4c3, type: 3}
+  - {fileID: 3159174519497341184, guid: 5b27860a906d1c04186723e1bce48682, type: 3}
+  - {fileID: 2998775866562858847, guid: 38fab13886ed54a4a954df76d691845d, type: 3}
+  - {fileID: 5033535912117328777, guid: 7f64e8891e4134f45b04c6b242618da9, type: 3}
+  - {fileID: 7446704887935140242, guid: e74e4c1bc43fbd847b9edfc4e561ea21, type: 3}
+  - {fileID: 4627343310816251110, guid: aa96ef588a7e7164a82114c497a72123, type: 3}
+  - {fileID: 194511620261570838, guid: 465427cd32290ad42a1fe630af9b265a, type: 3}
+  - {fileID: 1870549902785240562, guid: 1e09f2181f37b69428bb990ca3c2042f, type: 3}
+  - {fileID: 3547016858010959621, guid: 1b0a5522bb1790e4aad1f5480e9c6942, type: 3}
 --- !u!1 &8013172036133900909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,8 +1141,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.7781, y: 30}
-  m_SizeDelta: {x: 1112.1146, y: 388.9317}
+  m_AnchoredPosition: {x: -3.7781, y: 119.97}
+  m_SizeDelta: {x: 1112.1, y: 209}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8013172036164766738
 CanvasRenderer:
@@ -1183,24 +1174,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3fd5fbd04c003704791630832521e013, type: 3}
-    m_FontSize: 300
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 1
-    m_MaxSize: 300
+    m_MinSize: 0
+    m_MaxSize: 90
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'sfdgsfdgsfdgsdfgsdfgsdfgsdfgsfdgsdfgsdfgsfgsdfgd.
-
-    sasdfadsfadsfasdfasdfasdfadsvcsafdbsfgbsdfgb.
-
-    fgbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbsdfbs.sd
-
-    bsdfbsdfbsdfbsdfbsdfbfbafvbajdfhlkajdsbvlkajsdblfkablfdskjvb.'
+  m_Text: 
 --- !u!1 &8013172036434674184
 GameObject:
   m_ObjectHideFlags: 0

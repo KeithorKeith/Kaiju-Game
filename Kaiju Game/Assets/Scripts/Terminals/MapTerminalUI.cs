@@ -7,7 +7,10 @@ public class MapTerminalUI : MonoBehaviour
 {
 
     public City[] defenseCities;
-    public GameObject battleScreen, kaijuSelectScreen;
+    public GameObject kaijuDisplayPrefab;
+    public GameObject battleScreen, kaijuSelectScreen, kaijuSelectGrid;
+    public KaijuTerminalUI kaijuTerminalUI;
+    public EncyclopediaUI alienTerminalUI;
 
     public Image kaijuSprite, alienSprite;
     private int highlightedCity;
@@ -48,6 +51,8 @@ public class MapTerminalUI : MonoBehaviour
                 if (!defenseCities[i].underAttack && !defenseCities[i].isDestroyed)
                 {
                     // Only attack city if it is not already under attack
+                    GameObject newAlien = Instantiate(alienTerminalUI.alienMasterList[0].gameObject);
+                    defenseCities[i].attackingAlien = newAlien.GetComponent<Alien>();
                     defenseCities[i].ToggleUnderAttack(true, 3);
                 }
                 else
@@ -60,20 +65,31 @@ public class MapTerminalUI : MonoBehaviour
 
     public void OpenBattle(int cityIndex)
     {
-        battleScreen.SetActive(true);
-        highlightedCity = cityIndex;
+        if (defenseCities[cityIndex].underAttack)
+        {
+            battleScreen.SetActive(true);
+            highlightedCity = cityIndex;
+            alienSprite.sprite = defenseCities[highlightedCity].attackingAlien.alienSprite;
+        }
     }
 
     public void OpenKaijuSelect()
     {
         kaijuSelectScreen.SetActive(true);
+        for (int i = 0; i < kaijuTerminalUI.currentKaiju.Count; i++){
+            GameObject newKaiju = Instantiate(kaijuDisplayPrefab, kaijuSelectGrid.transform);
+            newKaiju.GetComponent<Image>().sprite = kaijuTerminalUI.currentKaiju[i].kaijuSprite;
+            int x = new int();
+            x = i;
+            newKaiju.GetComponent<Button>().onClick.AddListener(delegate { ChooseKaiju(kaijuTerminalUI.currentKaiju[x]); });
+        }
     }
 
-    public void ChooseKaiju()
+    public void ChooseKaiju(Kaiju kaiju)
     {
         kaijuSelectScreen.SetActive(false);
-        kaijuSprite.sprite = null;
-        defenseCities[highlightedCity].defenseKaiju = null;
+        kaijuSprite.sprite = kaiju.kaijuSprite;
+        defenseCities[highlightedCity].defenseKaiju = kaiju;
     }
 
     public void LockInBattle()
