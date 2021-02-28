@@ -235,7 +235,7 @@ public class MapTerminalUI : MonoBehaviour
         {
             return new int[] { 0, 0, 0, 1, 1, 1, 2, 2 };
         }
-        else if (turnNum < 30)
+        else if (turnNum < 25)
         {
             return new int[] { 0, 0, 0, 1, 1, 1, 2, 2, 3, 3 };
         }

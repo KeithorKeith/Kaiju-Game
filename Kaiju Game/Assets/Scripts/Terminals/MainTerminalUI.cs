@@ -84,8 +84,23 @@ public class MainTerminalUI : MonoBehaviour
             case 17:
                 citiesAttacked = mapTerminalUI.AttackCities(2, currentTurn);
                 break;
+            case 19:
+                citiesAttacked = mapTerminalUI.AttackCities(2, currentTurn);
+                break;
+            case 21:
+                citiesAttacked = mapTerminalUI.AttackCities(1, currentTurn);
+                break;
+            case 23:
+                citiesAttacked = mapTerminalUI.AttackCities(1, currentTurn);
+                break;
+            case 25:
+                citiesAttacked = mapTerminalUI.AttackCities(1, currentTurn);
+                break;
+            case 27:
+                citiesAttacked = mapTerminalUI.AttackCities(2, currentTurn);
+                break;
             default:
-                if(currentTurn > 20)
+                if(currentTurn > 30)
                 {
                     citiesAttacked = mapTerminalUI.AttackCities(3, currentTurn);
                 }

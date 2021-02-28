@@ -16,6 +16,7 @@ public class KaijuUIEntry : MonoBehaviour
         {
             terminalUI.descriptionText.text = kaiju.description;
             terminalUI.titleText.text = kaiju.name;
+            terminalUI.elementImage.enabled = true;
             terminalUI.elementImage.sprite = kaiju.elementType;
         }
 

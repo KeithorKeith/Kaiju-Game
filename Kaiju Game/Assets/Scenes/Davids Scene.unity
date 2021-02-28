@@ -567,6 +567,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 93041433629873650, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041434058912043, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Text
+      value: 'Welcome to Kaiju Control.
+
+
+        You have been given some basic
+        fire DNA to start you off. Use this to create your first Kaiju in the "Cook
+        a Kaiju" menu.
+
+
+        Obtain more DNA by defeating aliens and create new
+        strong kaiju by combining different elements.
+
+
+        Battling each type
+        of alien will unlock more information to help you discover its weakness!
+        Defeat all the alien bases to win!
+
+
+        Don''t let earth fall! Win the
+        game by destroying all of the alien nests!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664366932043227448, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
 --- !u!1 &1025440650 stripped
