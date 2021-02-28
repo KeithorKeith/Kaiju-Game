@@ -17,13 +17,27 @@ public class AlienUIEntry : MonoBehaviour
             terminalUI.hintBox1.text = alien.hintBox1;
             terminalUI.titleText.text = alien.name;
         }
-        if(alien.unlockLevel >= 2)
+        else
+        {
+            terminalUI.hintBox1.text = "";
+        }
+
+        if (alien.unlockLevel >= 2)
         {
             terminalUI.hintBox2.text = alien.hintBox2;
         }
+        else
+        {
+            terminalUI.hintBox2.text = "";
+        }
+
         if (alien.unlockLevel >= 3)
         {
             terminalUI.hintBox3.text = alien.hintBox3;
+        }
+        else
+        {
+            terminalUI.hintBox3.text = "";
         }
 
     }

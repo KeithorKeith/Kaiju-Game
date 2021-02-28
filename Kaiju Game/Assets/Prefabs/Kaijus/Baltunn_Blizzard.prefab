@@ -47,7 +47,7 @@ MonoBehaviour:
   description: Hidden in a constant Blizzard this Kaiju can single-handedly reverse
     global warming just by taking a bath in the Atlantic ocean.
   kaijuSprite: {fileID: 21300000, guid: 53e6c3742914334469bcfd33afb68b4e, type: 3}
-  elementType: {fileID: 21300000, guid: 53e6c3742914334469bcfd33afb68b4e, type: 3}
+  elementType: {fileID: 21300000, guid: e92cac0d0638b8143932072da617f445, type: 3}
   elementName: Blizzard
   isUnlocked: 0
   isDNA: 0

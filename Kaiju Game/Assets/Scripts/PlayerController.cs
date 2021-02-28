@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public static bool canMove = true;
     public float playerSpeed;
     private Rigidbody rigidBody;
     private float horizInp, fwdInp;
@@ -20,29 +20,32 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        horizInp = Input.GetAxis("Horizontal");
-        fwdInp = Input.GetAxis("Vertical");
-
-        if (horizInp != 0.0f || fwdInp != 0.0f)
+        if (canMove)
         {
-            transform.position += (fwdInp * transform.forward  + transform.right * horizInp).normalized * playerSpeed * Time.deltaTime;
-        }
+            horizInp = Input.GetAxis("Horizontal");
+            fwdInp = Input.GetAxis("Vertical");
 
-        /*if (Input.GetButtonDown("Jump"))
-        {
-            rigidBody.AddForce(1.0f * transform.up, ForceMode.Impulse);
-        }*/
-
-        if (Input.GetButtonDown("Interact"))
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit interactHit;
-            if(Physics.Raycast(ray, out interactHit, INTERACTDISTANCE))
+            if (horizInp != 0.0f || fwdInp != 0.0f)
             {
-                Terminal termScript = interactHit.transform.GetComponent<Terminal>();
-                if (termScript != null)
+                transform.position += (fwdInp * transform.forward + transform.right * horizInp).normalized * playerSpeed * Time.deltaTime;
+            }
+
+            /*if (Input.GetButtonDown("Jump"))
+            {
+                rigidBody.AddForce(1.0f * transform.up, ForceMode.Impulse);
+            }*/
+
+            if (Input.GetButtonDown("Interact"))
+            {
+                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+                RaycastHit interactHit;
+                if (Physics.Raycast(ray, out interactHit, INTERACTDISTANCE))
                 {
-                    termScript.Activate(gameObject);
+                    Terminal termScript = interactHit.transform.GetComponent<Terminal>();
+                    if (termScript != null)
+                    {
+                        termScript.Activate(gameObject);
+                    }
                 }
             }
         }

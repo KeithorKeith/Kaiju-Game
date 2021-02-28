@@ -48,7 +48,7 @@ MonoBehaviour:
     above the clouds roaring at absolutely nothing, like an annoying fox in your
     garden. What exactly is he screaming for?!
   kaijuSprite: {fileID: 21300000, guid: 82c4b54445be4c6449a59b7d475d23b7, type: 3}
-  elementType: {fileID: 21300000, guid: 82c4b54445be4c6449a59b7d475d23b7, type: 3}
+  elementType: {fileID: 21300000, guid: 7770d64f740052c4ab70b713c1511308, type: 3}
   elementName: Thunder
   isUnlocked: 0
   isDNA: 0

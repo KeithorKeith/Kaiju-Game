@@ -16,8 +16,8 @@ public class MouseCameraMovement : MonoBehaviour
 
     void Awake()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     void LateUpdate()

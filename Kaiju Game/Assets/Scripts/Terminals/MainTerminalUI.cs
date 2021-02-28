@@ -21,6 +21,8 @@ public class MainTerminalUI : MonoBehaviour
 
     // Variables
     private int currentTurn = 1;
+    public static bool gameOver = false;
+    public static bool gameWon = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,11 +38,16 @@ public class MainTerminalUI : MonoBehaviour
 
     public void NextTurn()
     {
+        if(gameOver || gameWon)
+        {
+            return;
+        }
+        PlayerController.canMove = false;
         foreach (GameObject gobj in hideDuringMessages)
         {
             gobj.SetActive(false);
         }
-            currentTurn++;
+        currentTurn++;
         titleText.text = $"Report Turn {currentTurn}";
         hudTurnText.text = $"Turn {currentTurn}";
 
@@ -53,21 +60,42 @@ public class MainTerminalUI : MonoBehaviour
         {
             turnMessages.Add(msg);
         }
-
+        int citiesAttacked = 0;
         switch (currentTurn)
         {
             case 3:
-                mapTerminalUI.AttackCities(1);
-                turnMessages.Add("1 city came under attack!");
+                citiesAttacked = mapTerminalUI.AttackCities(1, currentTurn);
                 break;
             case 8:
-                mapTerminalUI.AttackCities(1);
-                turnMessages.Add("1 city came under attack!");
+                citiesAttacked = mapTerminalUI.AttackCities(1, currentTurn);
                 break;
             case 13:
-                mapTerminalUI.AttackCities(2);
-                turnMessages.Add("2 cities came under attack!");
+                citiesAttacked = mapTerminalUI.AttackCities(2, currentTurn);
                 break;
+            case 15:
+                citiesAttacked = mapTerminalUI.AttackCities(2, currentTurn);
+                break;
+            case 17:
+                citiesAttacked = mapTerminalUI.AttackCities(2, currentTurn);
+                break;
+            default:
+                if(currentTurn > 20)
+                {
+                    citiesAttacked = mapTerminalUI.AttackCities(3, currentTurn);
+                }
+                break;
+        }
+
+        if(citiesAttacked > 0)
+        {
+            if(citiesAttacked == 1)
+            {
+                turnMessages.Add($"{citiesAttacked} city came under attack!");
+            }
+            else
+            {
+                turnMessages.Add($"{citiesAttacked} cities came under attack!");
+            }
         }
 
         List<string> kaijuMessages = kaijuTerminalUI.AdvanceTurn();
@@ -77,6 +105,13 @@ public class MainTerminalUI : MonoBehaviour
         }
 
         turnMessages.Add("Turn ended");
+        if (gameOver)
+        {
+            turnMessages.Add("Game Over! All cities were destroyed!");
+        }else if (gameWon)
+        {
+            turnMessages.Add("YOU WIN! All alien bases were destroyed!");
+        }
         StartCoroutine(DisplayMessages(turnMessages));
     }
 
@@ -96,6 +131,7 @@ public class MainTerminalUI : MonoBehaviour
         {
             gobj.SetActive(true);
         }
+        PlayerController.canMove = true;
     }
 
     void AddMessage(string messageText)

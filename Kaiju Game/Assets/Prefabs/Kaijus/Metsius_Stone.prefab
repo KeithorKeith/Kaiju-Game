@@ -47,7 +47,7 @@ MonoBehaviour:
   description: A walking landscape, Metsius has his own ecosystem and a very forward
     thinking community living on his back.
   kaijuSprite: {fileID: 21300000, guid: f44d45e9b6d93b548890fc8264749fcc, type: 3}
-  elementType: {fileID: 21300000, guid: f44d45e9b6d93b548890fc8264749fcc, type: 3}
+  elementType: {fileID: 21300000, guid: 084edfdb1eaafdc4b8520d9db42cd744, type: 3}
   elementName: Stone
   isUnlocked: 0
   isDNA: 0
