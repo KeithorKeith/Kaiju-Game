@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2998775866562858846}
   - component: {fileID: 2998775866562858847}
   m_Layer: 0
-  m_Name: Alien2_WToElectric
+  m_Name: Alien4_WToElectric
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   hintBox2: Avoiding large metal pieces of the city, it prefers to use water to traverse.
   hintBox3: The battle that occurred near a power transformer was the only time we
     noticed this specimen wince in pain.
-  alienSprite: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
-  elementType: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
+  alienSprite: {fileID: 21300000, guid: 937ae80433cd2844fb9bc274371b4844, type: 3}
+  elementType: {fileID: 21300000, guid: 8d77e7f08d25d4a4c9ad13c185e79701, type: 3}
   elementName: electric
   unlockLevel: 0
