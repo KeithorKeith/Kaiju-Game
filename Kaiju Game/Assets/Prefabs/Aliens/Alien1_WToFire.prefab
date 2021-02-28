@@ -50,6 +50,6 @@ MonoBehaviour:
   hintBox3: The more collateral damage and blazing building surround this creature
     the more weak it seems to get. It must not like hot environments!
   alienSprite: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
-  elementType: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
+  elementType: {fileID: 21300000, guid: 3b6599381320a174d9321ad859ab89fa, type: 3}
   elementName: fire
   unlockLevel: 0
