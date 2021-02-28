@@ -13,6 +13,7 @@ public class KaijuTerminalUI : MonoBehaviour
     public List<Kaiju> dnaMasterList;
     public Text descriptionText;
     public Text titleText;
+    public Image elementImage;
 
     // Breeding UI
     public GameObject breedKaijuEntryPrefab;

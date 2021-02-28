@@ -47,7 +47,7 @@ MonoBehaviour:
   description: A rocky abomination of a Kaiju, Vulchera looks as if it will erupt
     another magma filled animal at any moment.
   kaijuSprite: {fileID: 21300000, guid: b85b59f113c0eda46a7c3f51835c6055, type: 3}
-  elementType: {fileID: 21300000, guid: b85b59f113c0eda46a7c3f51835c6055, type: 3}
+  elementType: {fileID: 21300000, guid: 5465dd729513d6048a06f7f70377ec9a, type: 3}
   elementName: Magma
   isUnlocked: 0
   isDNA: 0

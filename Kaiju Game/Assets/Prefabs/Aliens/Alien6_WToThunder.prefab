@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 121fa013588d9c644af19c78f5acd2bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Specimen 9
+  name: Specimen 6
   hintBox1: The specimen reduced the Kaiju to ash in a mater of seconds. No valuable
     data was received.
   hintBox2: I do not know the link between inclement weather and these creatures
@@ -55,7 +55,5 @@ MonoBehaviour:
     completely outclassed. '
   alienSprite: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
   elementType: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
-  elementName: Weak to thunder
-  isUnlocked1: 0
-  isUnlocked2: 0
-  isUnlocked3: 0
+  elementName: thunder
+  unlockLevel: 0

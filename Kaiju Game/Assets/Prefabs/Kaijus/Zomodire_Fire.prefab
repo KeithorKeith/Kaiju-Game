@@ -47,7 +47,7 @@ MonoBehaviour:
   description: With magma coursing through this mountain of a lion this Kaiju can
     produce enough fire to pop every corn in existence.
   kaijuSprite: {fileID: 21300000, guid: 1be74ad3fddeff749b6957672849b9ac, type: 3}
-  elementType: {fileID: 21300000, guid: 1be74ad3fddeff749b6957672849b9ac, type: 3}
+  elementType: {fileID: 21300000, guid: 5465dd729513d6048a06f7f70377ec9a, type: 3}
   elementName: Fire
-  isUnlocked: 1
+  isUnlocked: 0
   isDNA: 0

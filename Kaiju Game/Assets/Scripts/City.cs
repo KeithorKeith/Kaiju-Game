@@ -79,4 +79,33 @@ public class City : MonoBehaviour
         }
         return successfullDefense;
     }
+
+    public bool CheckAttackStatus(List<string> messageList)
+    {
+        bool successfullAttack = false;
+        messageList.Add($"You mount an attack on {cityName}.");
+
+        if (attackingAlien.unlockLevel < 3)
+        {
+            attackingAlien.unlockLevel++;
+            messageList.Add($"New information was discovered about the alien {attackingAlien.name} while attacking {cityName}!");
+        }
+
+        if (defenseKaiju.elementName.ToLower() == attackingAlien.elementName.ToLower())
+        {
+            messageList.Add($"The Kaiju attacking {cityName} appeared to be effective against the {attackingAlien.name}! {cityName} was destroyed!");
+            successfullAttack = true;
+            ToggleUnderAttack(false);
+            ToggleisDestroyed(true);
+        }
+        else
+        {
+            messageList.Add($"The Kaiju attacking {cityName} was not effective against the {attackingAlien.name} and has been defeated!");
+        }
+
+        Destroy(defenseKaiju);
+        defenseKaiju = null;
+
+        return successfullAttack;
+    }
 }
