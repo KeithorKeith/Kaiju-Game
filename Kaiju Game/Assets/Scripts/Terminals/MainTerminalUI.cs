@@ -55,6 +55,12 @@ public class MainTerminalUI : MonoBehaviour
 
         turnMessages.Add($"Started turn {currentTurn}");
 
+        List<string> kaijuMessages = kaijuTerminalUI.AdvanceTurn();
+        foreach (string msg in kaijuMessages)
+        {
+            turnMessages.Add(msg);
+        }
+
         List<string> mapMessages = mapTerminalUI.CheckStatus(currentTurn);
         foreach(string msg in mapMessages)
         {
@@ -98,11 +104,7 @@ public class MainTerminalUI : MonoBehaviour
             }
         }
 
-        List<string> kaijuMessages = kaijuTerminalUI.AdvanceTurn();
-        foreach (string msg in kaijuMessages)
-        {
-            turnMessages.Add(msg);
-        }
+
 
         turnMessages.Add("Turn ended");
         if (gameOver)
@@ -125,7 +127,7 @@ public class MainTerminalUI : MonoBehaviour
         foreach (string msg in messages)
         {
             AddMessage(msg);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1.0f);
         }
         foreach (GameObject gobj in hideDuringMessages)
         {

@@ -21,6 +21,7 @@ public class MapTerminalUI : MonoBehaviour
     public void Start()
     {
         SetupAttackCities();
+
     }
 
     public void SetupAttackCities()
@@ -42,16 +43,21 @@ public class MapTerminalUI : MonoBehaviour
             if (city.underAttack && !city.isDestroyed)
             {
                 bool success = city.AdvanceAttack(result);
+                int[] rewards = { 0, 1 };
                 if (success)
                 {
-                    int[] rewards = GetRewards(turnNum);
-                    for(int i=0; i<rewards.Length; i++)
-                    {
-                        GameObject newDNA = Instantiate(kaijuTerminalUI.dnaMasterList[rewards[i]].gameObject);
-                        kaijuTerminalUI.currentKaiju.Add(newDNA.GetComponent<Kaiju>());
-                        kaijuTerminalUI.RenderMyKaijuUI();
-                    }
+                    rewards = GetRewards(turnNum);
                     result.Add("You gained DNA samples from defeating the alien!");
+                }
+                else
+                {
+                    result.Add("You were able to recover some DNA from your fallen kaiju after your loss.");
+                }
+                for (int i = 0; i < rewards.Length; i++)
+                {
+                    GameObject newDNA = Instantiate(kaijuTerminalUI.dnaMasterList[rewards[i]].gameObject);
+                    kaijuTerminalUI.currentKaiju.Add(newDNA.GetComponent<Kaiju>());
+                    kaijuTerminalUI.RenderMyKaijuUI();
                 }
             }
         }
@@ -222,32 +228,36 @@ public class MapTerminalUI : MonoBehaviour
 
     private int[] GetRewards(int turnNum)
     {
-        if(turnNum < 8)
+        if(turnNum < 13)
         {
-            return new int[] { 0, 0, 1, 1 };
-        }else if(turnNum < 15)
+            return new int[] { 0, 0, 0, 1, 1 };
+        }else if(turnNum < 20)
         {
-            return new int[] { 0, 0, 1, 1, 2 };
+            return new int[] { 0, 0, 0, 1, 1, 1, 2, 2 };
+        }
+        else if (turnNum < 30)
+        {
+            return new int[] { 0, 0, 0, 1, 1, 1, 2, 2, 3, 3 };
         }
         else
         {
-            return new int[] { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4 };
+            return new int[] { 0, 0, 1, 1, 2, 2, 3, 3, 3, 4, 4 };
         }
         
     }
     private int[] GetAttackRewards(int turnNum)
     {
-        if (turnNum < 8)
+        if (turnNum < 13)
         {
-            return new int[] { 0, 1, 1, 2 };
+            return new int[] { 0, 0, 1, 1, 2, 2 };
         }
-        else if (turnNum < 15)
+        else if (turnNum < 20)
         {
-            return new int[] { 1, 2, 2, 3 };
+            return new int[] { 1, 1, 2, 2, 3, 3 };
         }
         else
         {
-            return new int[] { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4 };
+            return new int[] { 0, 0, 1, 1, 2, 2, 3, 3, 3, 4, 4 };
         }
 
     }
@@ -258,6 +268,7 @@ public class MapTerminalUI : MonoBehaviour
         if (currentTurn < 5) { return 0; }
         else if (currentTurn < 10) { return 1; }
         else if (currentTurn < 15) { return Random.Range(0, 3); }
+        else if(currentTurn < 30) { return Random.Range(0, 4); }
         else
         {
             return Random.Range(0, alienTerminalUI.alienMasterList.Count);

@@ -42,8 +42,9 @@ public class KaijuTerminalUI : MonoBehaviour
             kaiju.isUnlocked = false;
         }
 
-        for (int i=0; i<2; i++)
+        for (int i=0; i<4; i++)
         {
+            // Give initial DNA
             GameObject firstDNA = Instantiate(dnaMasterList[0].gameObject);
             Kaiju firstDNAScript = firstDNA.GetComponent<Kaiju>();
             currentKaiju.Add(firstDNAScript);
@@ -261,23 +262,23 @@ public class KaijuTerminalUI : MonoBehaviour
         if (second != null) { secondElement = second.elementName.ToLower(); }
 
         //Individual elements
-        if ((firstElement == "fire" && secondElement == "none") || (secondElement == "fire" && firstElement == "none"))
+        if ((firstElement == "fire" && secondElement == "fire"))
         {
             newElement = "fire";
         }
-        else if ((firstElement == "ice" && secondElement == "none") || (secondElement == "ice" && firstElement == "none"))
+        else if ((firstElement == "ice" && secondElement == "ice"))
         {
             newElement = "ice";
         }
-        else if ((firstElement == "stone" && secondElement == "none") || (secondElement == "stone" && firstElement == "none"))
+        else if ((firstElement == "stone" && secondElement == "stone"))
         {
             newElement = "stone";
         }
-        else if ((firstElement == "electric" && secondElement == "none") || (secondElement == "electric" && firstElement == "none"))
+        else if ((firstElement == "electric" && secondElement == "electric"))
         {
             newElement = "electric";
         }
-        else if ((firstElement == "wind" && secondElement == "none") || (secondElement == "wind" && firstElement == "none"))
+        else if ((firstElement == "wind" && secondElement == "wind"))
         {
             newElement = "wind";
         }
