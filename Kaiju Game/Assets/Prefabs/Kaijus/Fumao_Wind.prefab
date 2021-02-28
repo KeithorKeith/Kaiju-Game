@@ -49,5 +49,5 @@ MonoBehaviour:
   kaijuSprite: {fileID: 21300000, guid: b5a93e6be8877ac4a875074f360c107c, type: 3}
   elementType: {fileID: 21300000, guid: b5a93e6be8877ac4a875074f360c107c, type: 3}
   elementName: Wind
-  isUnlocked: 1
+  isUnlocked: 0
   isDNA: 0

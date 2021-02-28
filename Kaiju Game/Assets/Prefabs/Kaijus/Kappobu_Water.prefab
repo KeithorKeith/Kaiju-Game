@@ -50,5 +50,5 @@ MonoBehaviour:
   kaijuSprite: {fileID: 21300000, guid: f5bccccc85dd7d04891734bd8d76b70e, type: 3}
   elementType: {fileID: 21300000, guid: f5bccccc85dd7d04891734bd8d76b70e, type: 3}
   elementName: Water
-  isUnlocked: 1
+  isUnlocked: 0
   isDNA: 0

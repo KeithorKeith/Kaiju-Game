@@ -12,13 +12,18 @@ public class AlienUIEntry : MonoBehaviour
 
     public void AlienButtonClick()
     {
-        if (alien.isUnlocked1)
+        if (alien.unlockLevel >= 1)
         {
             terminalUI.hintBox1.text = alien.hintBox1;
-            terminalUI.hintBox2.text = alien.hintBox2;
-            terminalUI.hintBox3.text = alien.hintBox3;
-
             terminalUI.titleText.text = alien.name;
+        }
+        if(alien.unlockLevel >= 2)
+        {
+            terminalUI.hintBox2.text = alien.hintBox2;
+        }
+        if (alien.unlockLevel >= 3)
+        {
+            terminalUI.hintBox3.text = alien.hintBox3;
         }
 
     }

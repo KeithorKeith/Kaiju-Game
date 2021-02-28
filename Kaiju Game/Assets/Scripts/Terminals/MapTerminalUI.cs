@@ -13,6 +13,7 @@ public class MapTerminalUI : MonoBehaviour
     public EncyclopediaUI alienTerminalUI;
 
     public Image kaijuSprite, alienSprite;
+    public Text kaijuText, alienText;
     private int highlightedCity;
 
     public List<string> CheckStatus()
@@ -22,7 +23,17 @@ public class MapTerminalUI : MonoBehaviour
         {
             if (city.underAttack && !city.isDestroyed)
             {
-                city.AdvanceAttack(result);
+                bool success = city.AdvanceAttack(result);
+                if (success)
+                {
+                    int[] rewards = { 0, 0, 0 };
+                    for(int i=0; i<rewards.Length; i++)
+                    {
+                        GameObject newDNA = Instantiate(kaijuTerminalUI.dnaMasterList[rewards[i]].gameObject);
+                        kaijuTerminalUI.currentKaiju.Add(newDNA.GetComponent<Kaiju>());
+                    }
+                    result.Add("You gained DNA samples from defeating the alien!");
+                }
             }
         }
 
@@ -51,8 +62,7 @@ public class MapTerminalUI : MonoBehaviour
                 if (!defenseCities[i].underAttack && !defenseCities[i].isDestroyed)
                 {
                     // Only attack city if it is not already under attack
-                    GameObject newAlien = Instantiate(alienTerminalUI.alienMasterList[0].gameObject);
-                    defenseCities[i].attackingAlien = newAlien.GetComponent<Alien>();
+                    defenseCities[i].attackingAlien = alienTerminalUI.alienMasterList[0];
                     defenseCities[i].ToggleUnderAttack(true, 3);
                 }
                 else
@@ -70,18 +80,39 @@ public class MapTerminalUI : MonoBehaviour
             battleScreen.SetActive(true);
             highlightedCity = cityIndex;
             alienSprite.sprite = defenseCities[highlightedCity].attackingAlien.alienSprite;
+            alienText.text = $"Name: {defenseCities[highlightedCity].attackingAlien.name}";
+
+            if(defenseCities[highlightedCity].defenseKaiju != null)
+            {
+                kaijuSprite.sprite = defenseCities[highlightedCity].defenseKaiju.kaijuSprite;
+                kaijuText.text = $"Name: {defenseCities[highlightedCity].defenseKaiju.name}";
+            }
+            else
+            {
+                kaijuSprite.sprite = null;
+                kaijuText.text = "Select a Kaiju to defend";
+            }
         }
     }
 
     public void OpenKaijuSelect()
     {
+        //Clean up old ones
+        foreach (Transform child in kaijuSelectGrid.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+
         kaijuSelectScreen.SetActive(true);
         for (int i = 0; i < kaijuTerminalUI.currentKaiju.Count; i++){
-            GameObject newKaiju = Instantiate(kaijuDisplayPrefab, kaijuSelectGrid.transform);
-            newKaiju.GetComponent<Image>().sprite = kaijuTerminalUI.currentKaiju[i].kaijuSprite;
-            int x = new int();
-            x = i;
-            newKaiju.GetComponent<Button>().onClick.AddListener(delegate { ChooseKaiju(kaijuTerminalUI.currentKaiju[x]); });
+            if (!kaijuTerminalUI.currentKaiju[i].isDNA)
+            {
+                GameObject newKaiju = Instantiate(kaijuDisplayPrefab, kaijuSelectGrid.transform);
+                newKaiju.GetComponent<Image>().sprite = kaijuTerminalUI.currentKaiju[i].kaijuSprite;
+                int x = new int();
+                x = i;
+                newKaiju.GetComponent<Button>().onClick.AddListener(delegate { ChooseKaiju(kaijuTerminalUI.currentKaiju[x]); });
+            }
         }
     }
 
@@ -89,7 +120,16 @@ public class MapTerminalUI : MonoBehaviour
     {
         kaijuSelectScreen.SetActive(false);
         kaijuSprite.sprite = kaiju.kaijuSprite;
+        kaijuText.text = $"Name: {kaiju.name}";
+        
+        if (defenseCities[highlightedCity].defenseKaiju != null)
+        {
+            kaijuTerminalUI.currentKaiju.Add(defenseCities[highlightedCity].defenseKaiju);
+        }
+
         defenseCities[highlightedCity].defenseKaiju = kaiju;
+        kaijuTerminalUI.currentKaiju.Remove(kaiju);
+        kaijuTerminalUI.RenderMyKaijuUI();
     }
 
     public void LockInBattle()

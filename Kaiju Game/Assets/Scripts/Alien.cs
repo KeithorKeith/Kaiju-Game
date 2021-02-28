@@ -17,9 +17,7 @@ public class Alien : MonoBehaviour
     public Sprite elementType;
     public string elementName;
 
-    public bool isUnlocked1;
-    public bool isUnlocked2;
-    public bool isUnlocked3;
+    public int unlockLevel = 0;
 
     public Alien()
     {

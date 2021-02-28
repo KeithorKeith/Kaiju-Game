@@ -48,5 +48,5 @@ MonoBehaviour:
   kaijuSprite: {fileID: 21300000, guid: 4ed25f9afcaaa934a8c6151a2171a82e, type: 3}
   elementType: {fileID: 0}
   elementName: fire
-  isUnlocked: 1
+  isUnlocked: 0
   isDNA: 1

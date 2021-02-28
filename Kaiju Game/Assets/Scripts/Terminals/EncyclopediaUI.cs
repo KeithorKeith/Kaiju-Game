@@ -15,23 +15,26 @@ public class EncyclopediaUI : MonoBehaviour
     public Text hintBox3;
 
     public List<Alien> alienMasterList;
-    
-    void Awake()
+
+    void OnEnable()
     {
+        RenderAliens();
+        titleText.text = "";
+        hintBox1.text = "";
+        hintBox2.text = "";
+        hintBox3.text = "";
+    }
+
+    void RenderAliens()
+    {
+        foreach (Transform child in alienList.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
         foreach (Alien alien in alienMasterList)
         {
             AddAlienToUI(alien);
         }
-    }
-
-    void Update()
-    {
-        
-    }
-
-    void AddMessage()
-    {
-        GameObject newMessage = Instantiate(alienPrefab, alienList.transform);
     }
 
     void AddAlienToUI(Alien alien)
@@ -42,7 +45,7 @@ public class EncyclopediaUI : MonoBehaviour
         AlienUIEntry UIEntry = newAlien.GetComponent<AlienUIEntry>();
         UIEntry.terminalUI = this;
         UIEntry.alien = alien;
-        if (alien.isUnlocked1)
+        if (alien.unlockLevel > 0)
         {
             UIEntry.hiddenBox.SetActive(false);
         }

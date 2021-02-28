@@ -1122,7 +1122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250934718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 8.27}
+  m_LocalPosition: {x: 0, y: 1, z: 3.76}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1121104269}
@@ -1141,6 +1141,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attachedUI: {fileID: 159302839}
+--- !u!114 &315193990 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5363514999544444604, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+  m_PrefabInstance: {fileID: 5869581654007407590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &341079689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,6 +1563,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399678167}
   m_CullTransparentMesh: 1
+--- !u!114 &408036264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3879628382805903994, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+  m_PrefabInstance: {fileID: 5869581654007407590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &416881031
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,7 +2296,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1927603813}
         m_TargetAssemblyTypeName: BasicUI, Assembly-CSharp
         m_MethodName: Close
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2574,7 +2596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778711200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.05, z: -5}
+  m_LocalPosition: {x: 0, y: 1.05, z: -0.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 351533057}
@@ -3132,7 +3154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.698709, a: 1}
+  m_Color: {r: 0.6415094, g: 0.39111257, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3260,7 +3282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061039645}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -7.49}
+  m_LocalPosition: {x: 0, y: 1, z: -4.11}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1121104269}
@@ -3801,14 +3823,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 452584818}
     m_Modifications:
+    - target: {fileID: 738632703, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 738632703, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 738632703, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.52089363
+      objectReference: {fileID: 0}
+    - target: {fileID: 951175374, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 278.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185606360, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 868.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185606360, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 413.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185606360, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -224
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923772079680238752, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5923772079937578039, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5923772080285159648, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: hudTurnText
+      value: 
+      objectReference: {fileID: 1888086026}
+    - target: {fileID: 5923772080285159648, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: mapTerminalUI
       value: 
       objectReference: {fileID: 241524388}
+    - target: {fileID: 5923772080285159648, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: alienTerminalUI
+      value: 
+      objectReference: {fileID: 1076249578}
     - target: {fileID: 5923772080285159648, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: kaijuTerminalUI
       value: 
@@ -3900,6 +3962,14 @@ PrefabInstance:
     - target: {fileID: 5923772080285159655, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: m_Name
       value: Main UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923772080285159655, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923772080609645308, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
@@ -4655,7 +4725,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1927603813}
         m_TargetAssemblyTypeName: BasicUI, Assembly-CSharp
         m_MethodName: Close
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5825,7 +5895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776850678}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 7.05, y: 1, z: -0.16}
+  m_LocalPosition: {x: 3.4, y: 1, z: -0.16}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1121104269}
@@ -6172,7 +6242,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3fd5fbd04c003704791630832521e013, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -6184,7 +6254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Turn: 1'
+  m_Text: Turn 1
 --- !u!222 &1888086027
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6493,7 +6563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090573909}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -7.98, y: 1.5, z: -0.16}
+  m_LocalPosition: {x: -4.51, y: 1.5, z: -0.16}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 1121104269}
@@ -6766,6 +6836,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3879628382805903994, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_Text
+      value: 'Name: TBD
+
+        Health: 3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5049005531813931019, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: alienText
+      value: 
+      objectReference: {fileID: 408036264}
+    - target: {fileID: 5049005531813931019, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: kaijuText
+      value: 
+      objectReference: {fileID: 315193990}
     - target: {fileID: 5049005531813931019, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
       propertyPath: alienTerminalUI
       value: 
