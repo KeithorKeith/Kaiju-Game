@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 194511620261570839}
   - component: {fileID: 194511620261570838}
   m_Layer: 0
-  m_Name: Alien1_WToThunder
+  m_Name: Alien6_WToThunder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
     it in a long time thunder and lightning seemed to tear the sky in half. It was
     the only reason the Kaiju lasted more than an hour during the fight as it was
     completely outclassed. '
-  alienSprite: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
-  elementType: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
+  alienSprite: {fileID: 21300000, guid: dd38fc57c081cc649835280e200be806, type: 3}
+  elementType: {fileID: 21300000, guid: e9a3e5e76cb0c924f860ed0b0cbc5951, type: 3}
   elementName: thunder
   unlockLevel: 0

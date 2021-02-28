@@ -51,7 +51,7 @@ MonoBehaviour:
   hintBox3: As the battle ended up near a mountain side a falling bolder broke this
     specimens concentration. It's almost as if he feared the mountain more than the
     Kaiju.
-  alienSprite: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
-  elementType: {fileID: 21300000, guid: baa9755ce9d937948898645acff1c782, type: 3}
+  alienSprite: {fileID: 21300000, guid: da44daeaba22305478402b9796a92817, type: 3}
+  elementType: {fileID: 21300000, guid: fc4e28ae0bb887a4aaf4ac41d67a9fa5, type: 3}
   elementName: stone
   unlockLevel: 0

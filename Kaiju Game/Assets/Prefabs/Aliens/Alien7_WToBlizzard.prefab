@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7446704887935140243}
   - component: {fileID: 7446704887935140242}
   m_Layer: 0
-  m_Name: Alien8_WToBlizzard
+  m_Name: Alien7_WToBlizzard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
     that night and nothing could be seen at the peak of the mountain. As soon as
     the specimen destroyed the Kaiju it made a hasty return to the base of the mountain
     and burrowed underground to sleep.
-  alienSprite: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
-  elementType: {fileID: 21300000, guid: 292d233b0dfe81b469ebcf894ce09f46, type: 3}
+  alienSprite: {fileID: 21300000, guid: 4c97bec89be3f554abac0e23f31b544c, type: 3}
+  elementType: {fileID: 21300000, guid: 550aa7d03ac589d43998a1b884d4b7aa, type: 3}
   elementName: blizzard
   unlockLevel: 1
