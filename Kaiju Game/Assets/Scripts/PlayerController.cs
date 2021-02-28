@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
             if (horizInp != 0.0f || fwdInp != 0.0f)
             {
-                Vector3 moveVec = (fwdInp * transform.forward + transform.right * horizInp) * Time.deltaTime * playerSpeed;
+                Vector3 moveVec = (fwdInp * transform.forward + transform.right * horizInp).normalized * Time.deltaTime * playerSpeed;
                 charControl.Move(moveVec);
             }
 
