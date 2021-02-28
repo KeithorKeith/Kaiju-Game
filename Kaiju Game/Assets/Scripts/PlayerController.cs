@@ -6,16 +6,17 @@ public class PlayerController : MonoBehaviour
 {
     public static bool canMove = true;
     public float playerSpeed;
-    private Rigidbody rigidBody;
+
     private float horizInp, fwdInp;
 
     private Camera cam;
     public static readonly float INTERACTDISTANCE = 5.0f;
+    private CharacterController charControl;
 
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody>();
         cam = GetComponentInChildren<Camera>();
+        charControl = GetComponent<CharacterController>();
     }
 
     void Update()
@@ -27,14 +28,9 @@ public class PlayerController : MonoBehaviour
 
             if (horizInp != 0.0f || fwdInp != 0.0f)
             {
-                //transform.position += (fwdInp * transform.forward + transform.right * horizInp).normalized * playerSpeed * Time.deltaTime;
-                rigidBody.AddForce((fwdInp * transform.forward + transform.right * horizInp).normalized * playerSpeed * Time.deltaTime, ForceMode.Impulse);
+                Vector3 moveVec = (fwdInp * transform.forward + transform.right * horizInp) * Time.deltaTime * playerSpeed;
+                charControl.Move(moveVec);
             }
-
-            /*if (Input.GetButtonDown("Jump"))
-            {
-                rigidBody.AddForce(1.0f * transform.up, ForceMode.Impulse);
-            }*/
 
             if (Input.GetButtonDown("Interact"))
             {
