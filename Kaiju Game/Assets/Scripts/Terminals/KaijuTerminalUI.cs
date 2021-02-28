@@ -32,23 +32,23 @@ public class KaijuTerminalUI : MonoBehaviour
     {
         currentEggs = new List<Egg>();
         activeBreedingKaiju = new Kaiju[breedingKaijuButtons.Length];
+        
+        descriptionText.text = "";
+        titleText.text = "";
+
+        foreach (Kaiju kaiju in KaijuMasterList)
+        {
+            kaiju.isUnlocked = false;
+        }
+
+        for (int i=0; i<2; i++)
+        {
+            GameObject firstDNA = Instantiate(dnaMasterList[0].gameObject);
+            Kaiju firstDNAScript = firstDNA.GetComponent<Kaiju>();
+            currentKaiju.Add(firstDNAScript);
+        }
+
         RenderKaijuEncyclopedia();
-
-        descriptionText.text = KaijuMasterList[0].description;
-        titleText.text = KaijuMasterList[0].name;
-
-        GameObject firstKaiju = Instantiate(KaijuMasterList[0].gameObject);
-        Kaiju firstKaijuScript = firstKaiju.GetComponent<Kaiju>();
-        currentKaiju.Add(firstKaijuScript);
-
-        GameObject scndKaiju = Instantiate(KaijuMasterList[1].gameObject);
-        Kaiju scndKaijuScript = scndKaiju.GetComponent<Kaiju>();
-        currentKaiju.Add(scndKaijuScript);
-
-        GameObject firstDNA = Instantiate(dnaMasterList[0].gameObject);
-        Kaiju firstDNAScript = firstDNA.GetComponent<Kaiju>();
-        currentKaiju.Add(firstDNAScript);
-
         RenderMyKaijuUI();
     }
 
@@ -119,6 +119,7 @@ public class KaijuTerminalUI : MonoBehaviour
             Kaiju mykaiju = currentKaiju[i];
             GameObject entry = Instantiate(breedKaijuEntryPrefab, breedKaijuList.transform);
             entry.GetComponent<Image>().sprite = mykaiju.kaijuSprite;
+            entry.GetComponentInChildren<Text>().text = mykaiju.name;
             int x = new int();
             x = i;
             entry.GetComponent<Button>().onClick.AddListener(delegate { SetKaijuForBreeding(kaijuPosition, x); });
@@ -130,6 +131,12 @@ public class KaijuTerminalUI : MonoBehaviour
     {
         breedingResultText.text = "";
         breedKaijuSelect.SetActive(false);
+
+        if (activeBreedingKaiju[breedingPosition] != null)
+        {
+            currentKaiju.Add(activeBreedingKaiju[breedingPosition]);
+        }
+
         breedingKaijuButtons[breedingPosition].GetComponent<Image>().sprite = currentKaiju[kaijuPosition].kaijuSprite;
         activeBreedingKaiju[breedingPosition] = currentKaiju[kaijuPosition];
         currentKaiju.Remove(currentKaiju[kaijuPosition]);
@@ -252,6 +259,7 @@ public class KaijuTerminalUI : MonoBehaviour
         if(first != null) { firstElement = first.elementName.ToLower(); }
         if (second != null) { secondElement = second.elementName.ToLower(); }
 
+        //Individual elements
         if ((firstElement == "fire" && secondElement == "none") || (secondElement == "fire" && firstElement == "none"))
         {
             newElement = "fire";
@@ -260,9 +268,34 @@ public class KaijuTerminalUI : MonoBehaviour
         {
             newElement = "ice";
         }
+        else if ((firstElement == "stone" && secondElement == "none") || (secondElement == "stone" && firstElement == "none"))
+        {
+            newElement = "stone";
+        }
+        else if ((firstElement == "electric" && secondElement == "none") || (secondElement == "electric" && firstElement == "none"))
+        {
+            newElement = "electric";
+        }
+        else if ((firstElement == "wind" && secondElement == "none") || (secondElement == "wind" && firstElement == "none"))
+        {
+            newElement = "wind";
+        }
+        // Combinations
         else if ((firstElement == "ice" && secondElement == "fire") || (secondElement == "ice" && firstElement == "fire"))
         {
             newElement = "water";
+        }
+        else if ((firstElement == "ice" && secondElement == "wind") || (secondElement == "ice" && firstElement == "wind"))
+        {
+            newElement = "blizzard";
+        }
+        else if ((firstElement == "electric" && secondElement == "wind") || (secondElement == "electric" && firstElement == "wind"))
+        {
+            newElement = "thunder";
+        }
+        else if ((firstElement == "fire" && secondElement == "stone") || (secondElement == "stone" && firstElement == "fire"))
+        {
+            newElement = "magma";
         }
         return newElement;
     }

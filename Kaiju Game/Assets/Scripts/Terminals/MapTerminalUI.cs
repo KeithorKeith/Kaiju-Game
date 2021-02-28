@@ -16,7 +16,7 @@ public class MapTerminalUI : MonoBehaviour
     public Text kaijuText, alienText;
     private int highlightedCity;
 
-    public List<string> CheckStatus()
+    public List<string> CheckStatus(int turnNum)
     {
         List<string> result = new List<string>();
         foreach (City city in defenseCities)
@@ -26,11 +26,12 @@ public class MapTerminalUI : MonoBehaviour
                 bool success = city.AdvanceAttack(result);
                 if (success)
                 {
-                    int[] rewards = { 0, 0, 0 };
+                    int[] rewards = GetRewards(turnNum);
                     for(int i=0; i<rewards.Length; i++)
                     {
                         GameObject newDNA = Instantiate(kaijuTerminalUI.dnaMasterList[rewards[i]].gameObject);
                         kaijuTerminalUI.currentKaiju.Add(newDNA.GetComponent<Kaiju>());
+                        kaijuTerminalUI.RenderMyKaijuUI();
                     }
                     result.Add("You gained DNA samples from defeating the alien!");
                 }
@@ -136,6 +137,22 @@ public class MapTerminalUI : MonoBehaviour
     {
         battleScreen.SetActive(false);
         highlightedCity = -1;
+    }
+
+    private int[] GetRewards(int turnNum)
+    {
+        if(turnNum < 8)
+        {
+            return new int[] { 0, 0, 1, 1 };
+        }else if(turnNum < 15)
+        {
+            return new int[] { 0, 0, 1, 1, 2 };
+        }
+        else
+        {
+            return new int[] { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4 };
+        }
+        
     }
 
 }

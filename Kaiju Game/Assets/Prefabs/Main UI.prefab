@@ -222,8 +222,8 @@ RectTransform:
   m_Father: {fileID: 722796478}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6081081}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.52089363}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -301,7 +301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 133.39}
+  m_AnchoredPosition: {x: 0, y: 278.9}
   m_SizeDelta: {x: 335.82, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &951175377
@@ -562,8 +562,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -212}
-  m_SizeDelta: {x: 680, y: 290}
+  m_AnchoredPosition: {x: 0, y: -224}
+  m_SizeDelta: {x: 868.14, y: 413.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6162166570475123146
 MonoBehaviour:
@@ -1362,7 +1362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5923772079680238755
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1619,7 +1619,7 @@ MonoBehaviour:
       - m_Target: {fileID: 5923772080285159649}
         m_TargetAssemblyTypeName: BasicUI, Assembly-CSharp
         m_MethodName: Close
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1701,8 +1701,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messagePrefab: {fileID: 542319997741185774, guid: 11bf11dc2c2deb44cb86365fa9bea872, type: 3}
   messageList: {fileID: 5923772080549357436}
+  hideDuringMessages:
+  - {fileID: 5923772079937578037}
+  - {fileID: 951175373}
+  - {fileID: 1772897928}
   titleText: {fileID: 5923772078976463802}
+  hudTurnText: {fileID: 0}
   mapTerminalUI: {fileID: 0}
+  kaijuTerminalUI: {fileID: 0}
+  alienTerminalUI: {fileID: 0}
 --- !u!1 &5923772080549357436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,7 +1789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5923772080609645311
 RectTransform:
   m_ObjectHideFlags: 0

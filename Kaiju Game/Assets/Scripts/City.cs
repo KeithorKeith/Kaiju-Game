@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class City : MonoBehaviour
 {
     public GameObject dangerOverlay, destroyedOverlay;
+    public Text healthText;
     public bool underAttack;
     public bool isDestroyed = false;
     public string cityName;
@@ -25,6 +27,7 @@ public class City : MonoBehaviour
     {
         isDestroyed = newStatus;
         destroyedOverlay.SetActive(newStatus);
+        healthText.text = "DESTROYED";
     }
 
     public bool AdvanceAttack(List<string> messageList)
@@ -42,6 +45,7 @@ public class City : MonoBehaviour
             else
             {
                 messageList.Add($"{cityName} took 1 damage because it wasn't defended");
+                healthText.text = $"Health: {health}";
             }
         }
         else
@@ -62,8 +66,6 @@ public class City : MonoBehaviour
             {
                 messageList.Add($"The Kaiju defending {cityName} was not effective against the {attackingAlien.name} and has been defeated!");
             }
-
-
 
             Destroy(defenseKaiju);
             defenseKaiju = null;

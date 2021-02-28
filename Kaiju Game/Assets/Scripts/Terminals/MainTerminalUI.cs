@@ -29,6 +29,7 @@ public class MainTerminalUI : MonoBehaviour
         {
             alien.unlockLevel = 0;
         }
+
         AddMessage("Game started");
         AddMessage("Start turn 1");
     }
@@ -47,7 +48,7 @@ public class MainTerminalUI : MonoBehaviour
 
         turnMessages.Add($"Started turn {currentTurn}");
 
-        List<string> mapMessages = mapTerminalUI.CheckStatus();
+        List<string> mapMessages = mapTerminalUI.CheckStatus(currentTurn);
         foreach(string msg in mapMessages)
         {
             turnMessages.Add(msg);
