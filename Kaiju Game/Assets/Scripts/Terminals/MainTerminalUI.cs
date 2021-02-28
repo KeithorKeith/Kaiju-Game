@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainTerminalUI : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class MainTerminalUI : MonoBehaviour
     public GameObject[] hideDuringMessages;
     public Text titleText;
     public Text hudTurnText;
+    public GameObject returnButton;
 
     // References to other Scene objects
     public MapTerminalUI mapTerminalUI;
@@ -27,6 +29,7 @@ public class MainTerminalUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        returnButton.SetActive(false);
         foreach (Alien alien in alienTerminalUI.alienMasterList)
         {
             alien.unlockLevel = 0;
@@ -125,9 +128,12 @@ public class MainTerminalUI : MonoBehaviour
         if (gameOver)
         {
             turnMessages.Add("Game Over! All cities were destroyed!");
-        }else if (gameWon)
+            returnButton.SetActive(true);
+        }
+        else if (gameWon)
         {
             turnMessages.Add("YOU WIN! All alien bases were destroyed!");
+            returnButton.SetActive(true);
         }
         StartCoroutine(DisplayMessages(turnMessages));
     }
@@ -159,5 +165,10 @@ public class MainTerminalUI : MonoBehaviour
         {
             newText.text = messageText;
         }
+    }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

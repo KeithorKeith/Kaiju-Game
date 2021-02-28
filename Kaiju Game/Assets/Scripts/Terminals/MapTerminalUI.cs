@@ -51,7 +51,7 @@ public class MapTerminalUI : MonoBehaviour
                 }
                 else
                 {
-                    result.Add("You were able to recover some DNA from your fallen kaiju after your loss.");
+                    result.Add("You were able to recover some DNA despite the destruction raging in the city.");
                 }
                 for (int i = 0; i < rewards.Length; i++)
                 {
