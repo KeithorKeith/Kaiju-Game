@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private float horizInp, fwdInp;
 
     private Camera cam;
-    public static readonly float INTERACTDISTANCE = 3.0f;
+    public static readonly float INTERACTDISTANCE = 5.0f;
 
     void Start()
     {
