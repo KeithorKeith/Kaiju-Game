@@ -3832,8 +3832,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -300}
-  m_SizeDelta: {x: 0, y: 600}
+  m_AnchoredPosition: {x: 0, y: -500}
+  m_SizeDelta: {x: 0, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &93041433237023688
 MonoBehaviour:
@@ -8214,6 +8214,14 @@ PrefabInstance:
       propertyPath: kaijuTerminalUI
       value: 
       objectReference: {fileID: 93041434010691890}
+    - target: {fileID: 5153930524276983245, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153930524276983245, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -500
+      objectReference: {fileID: 0}
     - target: {fileID: 5869581653904964932, guid: 7c6683b029741e34eb72aac949499e0e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
