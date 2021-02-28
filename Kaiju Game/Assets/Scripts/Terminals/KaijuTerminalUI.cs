@@ -294,7 +294,7 @@ public class KaijuTerminalUI : MonoBehaviour
         {
             newElement = "thunder";
         }
-        else if ((firstElement == "fire" && secondElement == "stone") || (secondElement == "stone" && firstElement == "fire"))
+        else if ((firstElement == "fire" && secondElement == "stone") || (secondElement == "fire" && firstElement == "stone"))
         {
             newElement = "magma";
         }

@@ -2982,8 +2982,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -100, y: -100}
+  m_AnchoredPosition: {x: 0, y: -30}
+  m_SizeDelta: {x: -100, y: -160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704409553
 MonoBehaviour:
@@ -3048,7 +3048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Content: {fileID: 0}
+  m_Content: {fileID: 1535006808}
   m_Horizontal: 1
   m_Vertical: 1
   m_MovementType: 1
@@ -3058,7 +3058,7 @@ MonoBehaviour:
   m_ScrollSensitivity: 1
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 1497423655}
   m_HorizontalScrollbarVisibility: 0
   m_VerticalScrollbarVisibility: 0
   m_HorizontalScrollbarSpacing: 0
@@ -4758,10 +4758,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 452584818}
     m_Modifications:
-    - target: {fileID: 5923772078976463803, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -58.94995
-      objectReference: {fileID: 0}
     - target: {fileID: 5923772080285159648, guid: fb22cb0f61e51654ba4face7a5c2be42, type: 3}
       propertyPath: hudTurnText
       value: 
