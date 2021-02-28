@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private float horizInp, fwdInp;
 
     private Camera cam;
-    public static readonly float INTERACTDISTANCE = 5.0f;
+    public static readonly float INTERACTDISTANCE = 4.0f;
 
     void Start()
     {
@@ -22,12 +22,13 @@ public class PlayerController : MonoBehaviour
     {
         if (canMove)
         {
-            horizInp = Input.GetAxis("Horizontal");
-            fwdInp = Input.GetAxis("Vertical");
+            horizInp = Input.GetAxisRaw("Horizontal");
+            fwdInp = Input.GetAxisRaw("Vertical");
 
             if (horizInp != 0.0f || fwdInp != 0.0f)
             {
-                transform.position += (fwdInp * transform.forward + transform.right * horizInp).normalized * playerSpeed * Time.deltaTime;
+                //transform.position += (fwdInp * transform.forward + transform.right * horizInp).normalized * playerSpeed * Time.deltaTime;
+                rigidBody.AddForce((fwdInp * transform.forward + transform.right * horizInp).normalized * playerSpeed * Time.deltaTime, ForceMode.Impulse);
             }
 
             /*if (Input.GetButtonDown("Jump"))

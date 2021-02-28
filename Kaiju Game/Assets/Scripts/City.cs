@@ -74,7 +74,7 @@ public class City : MonoBehaviour
 
         if(underAttack && attackCountdown <= 0 && !isDestroyed)
         {
-            messageList.Add($"{cityName} is no longer under attack");
+            messageList.Add($"The attack on {cityName} has subsided and it is no longer under attack.");
             ToggleUnderAttack(false);
         }
         return successfullDefense;
