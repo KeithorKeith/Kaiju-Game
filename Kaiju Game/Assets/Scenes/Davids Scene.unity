@@ -128,6 +128,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 93041432480673072, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
   m_PrefabInstance: {fileID: 571078358}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &105999758 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 93041433080377064, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+  m_PrefabInstance: {fileID: 571078358}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &284927733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -616,6 +621,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 93041432480673072, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 93041432532853496, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1219.73
@@ -628,9 +637,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -185.3
       objectReference: {fileID: 0}
+    - target: {fileID: 93041432539017083, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 93041432645849211, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041432655260817, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 93041432780075818, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
       propertyPath: m_SizeDelta.x
@@ -658,7 +675,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 93041432980231434, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 310
+      value: 325
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041432980231436, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Color.b
+      value: 0.36862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041432980231436, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041432980231436, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6117647
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041433029793300, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041433029793300, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041433029793300, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041433124229378, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 93041433184697845, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
       propertyPath: m_IsActive
@@ -680,13 +725,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.0005493164
       objectReference: {fileID: 0}
+    - target: {fileID: 93041433811380229, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041433811380229, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041433811380229, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 93041433920972194, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 93041433920972194, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 310
+      value: 325
       objectReference: {fileID: 0}
     - target: {fileID: 93041433920972194, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -704,9 +761,25 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0.49271867
       objectReference: {fileID: 0}
+    - target: {fileID: 93041434030101652, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041434030101652, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 93041434030101652, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 892071339329288456, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327472027481321959, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 2970781227230000813, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
       propertyPath: m_AnchorMax.x
@@ -731,6 +804,26 @@ PrefabInstance:
     - target: {fileID: 4664366932594887464, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0.7502893
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782197349548914108, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -188
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782197349583121841, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -115
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782197350768001081, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 71
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782197350768001081, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782197351025931564, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -47
       objectReference: {fileID: 0}
     - target: {fileID: 6016804577803720896, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
       propertyPath: returnButton
@@ -776,8 +869,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.1499939, y: 0}
-  m_SizeDelta: {x: -0.3000186, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587788669
 MonoBehaviour:
@@ -953,6 +1046,88 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807489339}
+  m_CullTransparentMesh: 1
+--- !u!1 &823099624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 823099625}
+  - component: {fileID: 823099627}
+  - component: {fileID: 823099626}
+  m_Layer: 5
+  m_Name: Title (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &823099625
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823099624}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2084339258}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 5, y: -207}
+  m_SizeDelta: {x: 500, y: 174.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &823099626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823099624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3fd5fbd04c003704791630832521e013, type: 3}
+    m_FontSize: 300
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Aliens will periodically attack earth''s cities.
+
+    Defend them using
+    you kaiju. If you lost all cities the game is over so be careful!'
+--- !u!222 &823099627
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823099624}
   m_CullTransparentMesh: 1
 --- !u!1 &1025440650 stripped
 GameObject:
@@ -1210,6 +1385,91 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661590791}
   m_CullTransparentMesh: 1
+--- !u!1 &2000737562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2000737563}
+  - component: {fileID: 2000737565}
+  - component: {fileID: 2000737564}
+  m_Layer: 5
+  m_Name: Title (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2000737563
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000737562}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 105999758}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -203}
+  m_SizeDelta: {x: 500, y: 206.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2000737564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000737562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3fd5fbd04c003704791630832521e013, type: 3}
+    m_FontSize: 300
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Take the fight to the aliens by attacking their nests.
+
+    Complete the
+    game by destroying all nests!
+
+    We don''t recommend you challenge thse until
+    you have created some strong kaiju!'
+--- !u!222 &2000737565
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000737562}
+  m_CullTransparentMesh: 1
 --- !u!1 &2011300559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,7 +1507,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -25.000025, y: -105.000145}
-  m_SizeDelta: {x: 310, y: 60}
+  m_SizeDelta: {x: 325, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2011300561
 MonoBehaviour:
@@ -1318,7 +1578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6117647, g: 0.63529414, b: 0.37647063, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1346,6 +1606,11 @@ CanvasRenderer:
 --- !u!1 &2033204054 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7961815699757419097, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
+  m_PrefabInstance: {fileID: 571078358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2084339258 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 93041433286882202, guid: 0177449290270ff45aad4db4fdaa2c38, type: 3}
   m_PrefabInstance: {fileID: 571078358}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &160514488510014587
